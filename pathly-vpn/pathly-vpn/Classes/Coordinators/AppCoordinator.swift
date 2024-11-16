@@ -75,7 +75,8 @@ extension AppCoordinator {
     func showSplashFlow(completion: Completion?) {
         var splashComponents = SplashComponents.make(
             apiService: apiService,
-            storageService: storageService
+            storageService: storageService, 
+            storeService: storeService
         )
         splashComponents.presenter.didFinish = completion
         self.navigationController.setViewControllers([splashComponents.viewController], animated: false)

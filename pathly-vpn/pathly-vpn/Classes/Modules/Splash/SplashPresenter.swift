@@ -23,12 +23,14 @@ class SplashPresenter {
     private var cancellables = Set<AnyCancellable>()
     private var apiService: APINetworkServiceInterface
     private var storageService: StorageServiceInterface
+    private var storeService: StoreServiceInterface
     private var group: DispatchGroup = DispatchGroup()
     
-    init(view: SplashView, apiService: APINetworkServiceInterface, storageService: StorageServiceInterface) {
+    init(view: SplashView, apiService: APINetworkServiceInterface, storageService: StorageServiceInterface, storeService: StoreServiceInterface) {
         self.view = view
         self.apiService = apiService
         self.storageService = storageService
+        self.storeService = storeService
     }
     
     private func getServers(completion: ((Result<[Server], ErrorResponse>) -> Void)?) {
@@ -62,9 +64,15 @@ extension SplashPresenter: SplashPresenterInterface {
             self?.group.leave()
         }
         
+        group.enter()
+        self.storeService.load { [weak self] in
+            self?.group.leave()
+        }
+        
         group.notify(queue: .main, execute: { [weak self] in
             self?.didFinish?()
         })
+        
     }
     
     func viewDidFinish() {

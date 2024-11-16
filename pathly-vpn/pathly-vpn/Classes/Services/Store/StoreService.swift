@@ -60,6 +60,7 @@ protocol StoreServiceInterface {
     var hasUnlockedPro: Bool { get }
     var didUpdate: Completion? { get set }
     
+    func load(completion: Completion?)
     func pay(productId: String)
 }
 
@@ -93,12 +94,25 @@ final class StoreService {
     
     init() {
         self.updates = observeTransactionUpdates()
+//        Task {
+//            do {
+//                try await loadProducts()
+//                await updatePurchasedProducts()
+//            } catch {
+//                print("Ошибка загрузки продуктов: \(error)")
+//            }
+//        }
+    }
+    
+    func load(completion: Completion?) {
         Task {
             do {
                 try await loadProducts()
                 await updatePurchasedProducts()
+                completion?()
             } catch {
                 print("Ошибка загрузки продуктов: \(error)")
+                completion?()
             }
         }
     }
@@ -124,6 +138,7 @@ final class StoreService {
             switch result {
             case .success(let verificationResult):
                 let transaction = try checkVerified(verificationResult)
+                await self.updatePurchasedProducts()
                 await transaction.finish()
             case .userCancelled:
                 print("Пользователь отменил покупку")

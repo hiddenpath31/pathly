@@ -36,7 +36,7 @@ class PowerButtonView: UIView {
         return view
     }()
     private lazy var powerLogoView: UIImageView = {
-        let power = UIImageView(image: Asset.vpnPower.image)
+        let power = UIImageView(image: Asset.vpnPower.image.withRenderingMode(.alwaysTemplate))
         return power
     }()
     

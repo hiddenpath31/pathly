@@ -31,18 +31,18 @@ struct Constants {
     }
     
     struct Subscription {
-        static let productIds = [
-            "ovulenmintertest1",
-            "ovulenmintertest2",
-            "ovulenmintertest3"
-        ]
 //        static let productIds = [
-//            "com.set.pathlypro.week",
-//            "com.set.pathlypro.month",
-//            "com.set.pathlypro.year"
+//            "ovulenmintertest1",
+//            "ovulenmintertest2",
+//            "ovulenmintertest3"
 //        ]
-        static let defaultId = "ovulenmintertest2"
-//        static let defaultId = "com.set.pathlypro.month"
+        static let productIds = [
+            "com.set.pathlypro.week",
+            "com.set.pathlypro.month",
+            "com.set.pathlypro.year"
+        ]
+//        static let defaultId = "ovulenmintertest2"
+        static let defaultId = "com.set.pathlypro.month"
         static let sharedKey = ""
     }
     
