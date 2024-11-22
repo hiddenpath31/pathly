@@ -72,8 +72,9 @@ extension PaywallPresenter: PaywallPresenterInterface {
 
         self.products = storeService.displayProducts.map({ product in
             var p = product
-            if let description = self.storageService.remoteRespone?.subscriptions?.first(where: { $0.productId == product.id })?.description {
-                p.description = description
+            if let product = self.storageService.remoteRespone?.productLocalize?.first(where: { $0.productId == product.id }) {
+                p.description = product.description
+                p.name = product.name
             }
             return p
         })

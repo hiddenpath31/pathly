@@ -24,6 +24,7 @@ struct FunnelModel: Codable {
 struct RemoteSubscription: Codable {
     var productId: String
     var description: String
+    var name: String
 }
 
 struct FailAlert: Codable {

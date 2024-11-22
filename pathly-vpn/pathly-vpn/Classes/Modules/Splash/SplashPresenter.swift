@@ -26,7 +26,7 @@ struct RemoteResponse {
     var dismissDelay: Int
     var scanFlow: FunnelModel?
     var checkFlow: FunnelModel?
-    var subscriptions: [RemoteSubscription]?
+    var productLocalize: [RemoteSubscription]?
     
     var keys: [String] {
         var k: [String] = []

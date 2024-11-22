@@ -82,11 +82,11 @@ class StorageService {
                 
                 let funnelScanFlowDataValue = remoteConfig.configValue(forKey: "scan_flow_\(languageCode)").dataValue
                 let funnelCheckFlowDataValue = remoteConfig.configValue(forKey: "check_flow_\(languageCode)").dataValue
-                let subscriptionsValue = remoteConfig.configValue(forKey: "subscriptions").dataValue
+                let productValue = remoteConfig.configValue(forKey: "product_subscription_\(languageCode)").dataValue
                 
                 let funnelScanFlow: FunnelModel? = try? decoder.decode(FunnelModel.self, from: funnelScanFlowDataValue)
                 let funnelCheckFlow: FunnelModel? = try? decoder.decode(FunnelModel.self, from: funnelCheckFlowDataValue)
-                let subscription = try? decoder.decode([RemoteSubscription].self, from: subscriptionsValue)
+                let productLocalize: [RemoteSubscription]? = try? decoder.decode([RemoteSubscription].self, from: productValue)
                 
                 let remoteResponse = RemoteResponse(
                     appkey1: key1,
@@ -94,7 +94,7 @@ class StorageService {
                     dismissDelay: Int(truncating: dismissDelay),
                     scanFlow: funnelScanFlow,
                     checkFlow: funnelCheckFlow,
-                    subscriptions: subscription
+                    productLocalize: productLocalize
                 )
 
                 self.remoteRespone = remoteResponse
