@@ -8,7 +8,7 @@
 import UIKit
 
 enum Paywall {
-    case single
+    case single(dismissDelay: Int)
     case multy
 }
 
@@ -17,7 +17,7 @@ struct PaywallComponents {
     var viewController: UIViewController
     var presenter: PaywallPresenterInterface
     
-    static func make(storeService: StoreServiceInterface, type: Paywall) -> PaywallComponents {
+    static func make(storeService: StoreServiceInterface, apiService: APINetworkServiceInterface, storageService: StorageServiceInterface, type: Paywall) -> PaywallComponents {
         let viewController: CommonPaywallViewController = {
             switch type {
                 case .single:
@@ -29,6 +29,8 @@ struct PaywallComponents {
         let presenter = PaywallPresenter(
             view: viewController,
             storeService: storeService, 
+            apiService: apiService, 
+            storageService: storageService,
             type: type
         )
         viewController.presenter = presenter

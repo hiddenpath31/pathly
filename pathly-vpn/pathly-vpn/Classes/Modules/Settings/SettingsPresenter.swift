@@ -15,17 +15,20 @@ class SettingsPresenter: NSObject {
     weak var view: SettingsView?
     private var items: [SettingItem] = SettingItem.allCases
     private var storeService: StoreServiceInterface
+    private var storageService: StorageServiceInterface
     
-    init(view: SettingsView, storeService: StoreServiceInterface) {
+    init(view: SettingsView, storeService: StoreServiceInterface, storageService: StorageServiceInterface) {
         self.view = view
         self.storeService = storeService
+        self.storageService = storageService
     }
     
     private func handleDidSelect(item: SettingItem) {
         switch item {
             case .subscription:
                 self.view?.showPaywall(
-                    storeService: self.storeService,
+                    storeService: self.storeService, 
+                    storageService: self.storageService,
                     type: .multy
                 )
             case .support:

@@ -91,7 +91,11 @@ extension LocationsPresenter: LocationsPresenterInterface {
         self.view?.hideKeyboard()
         
         if server.premium == true && self.storeService.hasUnlockedPro == false {
-            self.view?.showPaywall(storeService: self.storeService, type: .single)
+            self.view?.showPaywall(
+                storeService: self.storeService,
+                storageService: self.storageService,
+                type: .single(dismissDelay: 0)
+            )
             return
         }
         

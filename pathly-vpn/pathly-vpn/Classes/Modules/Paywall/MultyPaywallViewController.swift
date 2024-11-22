@@ -106,7 +106,7 @@ class ProductView: UIView {
     func configure(product: ProductDTO) {
         self.id = product.id
         self.titleLabel.text = product.name
-        if let description = product.description {
+        if let description = product.description, description.isEmpty == false {
             self.descriptionLabel.isHidden = false
             self.descriptionLabel.text = description
         } else {

@@ -99,6 +99,36 @@
 		11DAD7232CDCF9600051A2F2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DAD7222CDCF9600051A2F2 /* SettingsViewController.swift */; };
 		11DAD7262CDCF98D0051A2F2 /* TabNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DAD7252CDCF98D0051A2F2 /* TabNavigationController.swift */; };
 		11DAD7292CDCF9AA0051A2F2 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DAD7282CDCF9AA0051A2F2 /* TabItem.swift */; };
+		11F00B0C2CEE66A300C21098 /* BranchSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 11F00B0B2CEE66A300C21098 /* BranchSDK */; };
+		11F00B212CEE688A00C21098 /* FunnelCheckYouPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B102CEE688A00C21098 /* FunnelCheckYouPhoneView.swift */; };
+		11F00B222CEE688A00C21098 /* FunnelFlowCheckPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B132CEE688A00C21098 /* FunnelFlowCheckPhoneViewController.swift */; };
+		11F00B232CEE688A00C21098 /* FunnelFlowScanPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B142CEE688A00C21098 /* FunnelFlowScanPhoneViewController.swift */; };
+		11F00B242CEE688A00C21098 /* FunnelCheckingYourPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B162CEE688A00C21098 /* FunnelCheckingYourPhoneView.swift */; };
+		11F00B252CEE688A00C21098 /* FunnelFlowScanPhoneRiskCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B172CEE688A00C21098 /* FunnelFlowScanPhoneRiskCategoryView.swift */; };
+		11F00B262CEE688A00C21098 /* FunnelFlowScanPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B182CEE688A00C21098 /* FunnelFlowScanPhoneView.swift */; };
+		11F00B272CEE688A00C21098 /* FunnelFlowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B1A2CEE688A00C21098 /* FunnelFlowPresenter.swift */; };
+		11F00B282CEE688A00C21098 /* FunnelFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B1B2CEE688A00C21098 /* FunnelFlowView.swift */; };
+		11F00B292CEE688A00C21098 /* FunnelLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B1D2CEE688A00C21098 /* FunnelLoaderViewController.swift */; };
+		11F00B2A2CEE688A00C21098 /* FunnelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B1F2CEE688A00C21098 /* FunnelCoordinator.swift */; };
+		11F00B2C2CEE6BE100C21098 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11F00B2B2CEE6BE100C21098 /* GoogleService-Info.plist */; };
+		11F00B2F2CEE6CAD00C21098 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 11F00B2E2CEE6CAD00C21098 /* JGProgressHUD */; };
+		11F00B322CEE6CE200C21098 /* SkarbSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 11F00B312CEE6CE200C21098 /* SkarbSDK */; };
+		11F00B352CEE713400C21098 /* ScreenshotPreventing in Frameworks */ = {isa = PBXBuildFile; productRef = 11F00B342CEE713400C21098 /* ScreenshotPreventing */; };
+		11F00B382CEE718000C21098 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 11F00B372CEE718000C21098 /* Lottie */; };
+		11F00B3A2CEE728000C21098 /* Funnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B392CEE728000C21098 /* Funnel.swift */; };
+		11F00B3C2CEE75F300C21098 /* AnalyticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B3B2CEE75F300C21098 /* AnalyticService.swift */; };
+		11F00B3F2CEE772900C21098 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 11F00B3E2CEE772900C21098 /* FirebaseAnalytics */; };
+		11F00B412CEE772900C21098 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 11F00B402CEE772900C21098 /* FirebaseCore */; };
+		11F00B432CEE781800C21098 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B422CEE781800C21098 /* Extension+UIColor.swift */; };
+		11F00B452CEE787500C21098 /* AnalyticValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B442CEE787500C21098 /* AnalyticValues.swift */; };
+		11F00B472CEFCC6900C21098 /* SubscribeEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B462CEFCC6900C21098 /* SubscribeEventRequest.swift */; };
+		11F00B4A2CEFDC8F00C21098 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 11F00B492CEFDC8F00C21098 /* NVActivityIndicatorView */; };
+		11F00B4C2CEFDC8F00C21098 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = 11F00B4B2CEFDC8F00C21098 /* NVActivityIndicatorViewExtended */; };
+		11F00B4F2CEFE3E700C21098 /* Extension+Skarb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B4E2CEFE3E700C21098 /* Extension+Skarb.swift */; };
+		11F00B512CEFE55C00C21098 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 11F00B502CEFE55C00C21098 /* FirebaseRemoteConfig */; };
+		11F00B562CF0154300C21098 /* grow_offer.json in Resources */ = {isa = PBXBuildFile; fileRef = 11F00B522CF0154300C21098 /* grow_offer.json */; };
+		11F00B572CF0154300C21098 /* Load.json in Resources */ = {isa = PBXBuildFile; fileRef = 11F00B532CF0154300C21098 /* Load.json */; };
+		11F00B582CF0154300C21098 /* scanning.json in Resources */ = {isa = PBXBuildFile; fileRef = 11F00B542CF0154300C21098 /* scanning.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -195,6 +225,26 @@
 		11DAD7222CDCF9600051A2F2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		11DAD7252CDCF98D0051A2F2 /* TabNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationController.swift; sourceTree = "<group>"; };
 		11DAD7282CDCF9AA0051A2F2 /* TabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		11F00B102CEE688A00C21098 /* FunnelCheckYouPhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelCheckYouPhoneView.swift; sourceTree = "<group>"; };
+		11F00B132CEE688A00C21098 /* FunnelFlowCheckPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowCheckPhoneViewController.swift; sourceTree = "<group>"; };
+		11F00B142CEE688A00C21098 /* FunnelFlowScanPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowScanPhoneViewController.swift; sourceTree = "<group>"; };
+		11F00B162CEE688A00C21098 /* FunnelCheckingYourPhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelCheckingYourPhoneView.swift; sourceTree = "<group>"; };
+		11F00B172CEE688A00C21098 /* FunnelFlowScanPhoneRiskCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowScanPhoneRiskCategoryView.swift; sourceTree = "<group>"; };
+		11F00B182CEE688A00C21098 /* FunnelFlowScanPhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowScanPhoneView.swift; sourceTree = "<group>"; };
+		11F00B1A2CEE688A00C21098 /* FunnelFlowPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowPresenter.swift; sourceTree = "<group>"; };
+		11F00B1B2CEE688A00C21098 /* FunnelFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowView.swift; sourceTree = "<group>"; };
+		11F00B1D2CEE688A00C21098 /* FunnelLoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelLoaderViewController.swift; sourceTree = "<group>"; };
+		11F00B1F2CEE688A00C21098 /* FunnelCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelCoordinator.swift; sourceTree = "<group>"; };
+		11F00B2B2CEE6BE100C21098 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		11F00B392CEE728000C21098 /* Funnel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Funnel.swift; sourceTree = "<group>"; };
+		11F00B3B2CEE75F300C21098 /* AnalyticService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticService.swift; sourceTree = "<group>"; };
+		11F00B422CEE781800C21098 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		11F00B442CEE787500C21098 /* AnalyticValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticValues.swift; sourceTree = "<group>"; };
+		11F00B462CEFCC6900C21098 /* SubscribeEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeEventRequest.swift; sourceTree = "<group>"; };
+		11F00B4E2CEFE3E700C21098 /* Extension+Skarb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Skarb.swift"; sourceTree = "<group>"; };
+		11F00B522CF0154300C21098 /* grow_offer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grow_offer.json; sourceTree = "<group>"; };
+		11F00B532CF0154300C21098 /* Load.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Load.json; sourceTree = "<group>"; };
+		11F00B542CF0154300C21098 /* scanning.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = scanning.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,8 +253,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				118751512CE118CF00B399CC /* StoreKit.framework in Frameworks */,
+				11F00B382CEE718000C21098 /* Lottie in Frameworks */,
+				11F00B0C2CEE66A300C21098 /* BranchSDK in Frameworks */,
 				11DAD6E82CDC71D00051A2F2 /* SnapKit in Frameworks */,
+				11F00B352CEE713400C21098 /* ScreenshotPreventing in Frameworks */,
+				11F00B322CEE6CE200C21098 /* SkarbSDK in Frameworks */,
+				11F00B412CEE772900C21098 /* FirebaseCore in Frameworks */,
+				11F00B2F2CEE6CAD00C21098 /* JGProgressHUD in Frameworks */,
+				11F00B4A2CEFDC8F00C21098 /* NVActivityIndicatorView in Frameworks */,
+				11F00B4C2CEFDC8F00C21098 /* NVActivityIndicatorViewExtended in Frameworks */,
+				11F00B512CEFE55C00C21098 /* FirebaseRemoteConfig in Frameworks */,
 				1126A8962CDEC3DD00C035AB /* Alamofire in Frameworks */,
+				11F00B3F2CEE772900C21098 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +464,9 @@
 			isa = PBXGroup;
 			children = (
 				11DAD6B62CDC69530051A2F2 /* Assets.xcassets */,
+				11F00B2B2CEE6BE100C21098 /* GoogleService-Info.plist */,
 				11DAD6CF2CDC6B4D0051A2F2 /* Localizable */,
+				11F00B552CF0154300C21098 /* Lottie Animation */,
 				11DAD6CE2CDC6B390051A2F2 /* Fonts */,
 				11DAD6CD2CDC6AF10051A2F2 /* Generated */,
 			);
@@ -436,6 +498,7 @@
 		11DAD6C42CDC69A70051A2F2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				11F00B202CEE688A00C21098 /* Funnel */,
 				1187513E2CE0DD7300B399CC /* Paywall */,
 				118751392CE0DB5200B399CC /* Privacy */,
 				1177CDE72CDDFC0600ED4B83 /* Locations */,
@@ -516,6 +579,7 @@
 				11684D1A2CDF79D200049333 /* Extension+String.swift */,
 				11684D192CDF79D200049333 /* Extension+UIView.swift */,
 				11B32A952CE843510012F65E /* Extension+Date.swift */,
+				11F00B422CEE781800C21098 /* Extension+UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -559,6 +623,7 @@
 		11DAD6EE2CDC7E0D0051A2F2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				11F00B3B2CEE75F300C21098 /* AnalyticService.swift */,
 				1187514C2CE1097E00B399CC /* Store */,
 				1126A8932CDEC26400C035AB /* Network */,
 				1126A8922CDEC25900C035AB /* Storage */,
@@ -654,6 +719,93 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
+		11F00B112CEE688A00C21098 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11F00B102CEE688A00C21098 /* FunnelCheckYouPhoneView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11F00B122CEE688A00C21098 /* CheckDevice */ = {
+			isa = PBXGroup;
+			children = (
+				11F00B112CEE688A00C21098 /* Views */,
+			);
+			path = CheckDevice;
+			sourceTree = "<group>";
+		};
+		11F00B152CEE688A00C21098 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11F00B132CEE688A00C21098 /* FunnelFlowCheckPhoneViewController.swift */,
+				11F00B142CEE688A00C21098 /* FunnelFlowScanPhoneViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		11F00B192CEE688A00C21098 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11F00B162CEE688A00C21098 /* FunnelCheckingYourPhoneView.swift */,
+				11F00B172CEE688A00C21098 /* FunnelFlowScanPhoneRiskCategoryView.swift */,
+				11F00B182CEE688A00C21098 /* FunnelFlowScanPhoneView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11F00B1C2CEE688A00C21098 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				11F00B152CEE688A00C21098 /* Controllers */,
+				11F00B192CEE688A00C21098 /* Views */,
+				11F00B1A2CEE688A00C21098 /* FunnelFlowPresenter.swift */,
+				11F00B1B2CEE688A00C21098 /* FunnelFlowView.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		11F00B1E2CEE688A00C21098 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				11F00B1D2CEE688A00C21098 /* FunnelLoaderViewController.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		11F00B202CEE688A00C21098 /* Funnel */ = {
+			isa = PBXGroup;
+			children = (
+				11F00B4D2CEFE3D300C21098 /* Extensions */,
+				11F00B122CEE688A00C21098 /* CheckDevice */,
+				11F00B1C2CEE688A00C21098 /* Flow */,
+				11F00B1E2CEE688A00C21098 /* Loader */,
+				11F00B392CEE728000C21098 /* Funnel.swift */,
+				11F00B442CEE787500C21098 /* AnalyticValues.swift */,
+				11F00B1F2CEE688A00C21098 /* FunnelCoordinator.swift */,
+				11F00B462CEFCC6900C21098 /* SubscribeEventRequest.swift */,
+			);
+			path = Funnel;
+			sourceTree = "<group>";
+		};
+		11F00B4D2CEFE3D300C21098 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11F00B4E2CEFE3E700C21098 /* Extension+Skarb.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		11F00B552CF0154300C21098 /* Lottie Animation */ = {
+			isa = PBXGroup;
+			children = (
+				11F00B522CF0154300C21098 /* grow_offer.json */,
+				11F00B532CF0154300C21098 /* Load.json */,
+				11F00B542CF0154300C21098 /* scanning.json */,
+			);
+			path = "Lottie Animation";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -673,6 +825,16 @@
 			packageProductDependencies = (
 				11DAD6E72CDC71D00051A2F2 /* SnapKit */,
 				1126A8952CDEC3DD00C035AB /* Alamofire */,
+				11F00B0B2CEE66A300C21098 /* BranchSDK */,
+				11F00B2E2CEE6CAD00C21098 /* JGProgressHUD */,
+				11F00B312CEE6CE200C21098 /* SkarbSDK */,
+				11F00B342CEE713400C21098 /* ScreenshotPreventing */,
+				11F00B372CEE718000C21098 /* Lottie */,
+				11F00B3E2CEE772900C21098 /* FirebaseAnalytics */,
+				11F00B402CEE772900C21098 /* FirebaseCore */,
+				11F00B492CEFDC8F00C21098 /* NVActivityIndicatorView */,
+				11F00B4B2CEFDC8F00C21098 /* NVActivityIndicatorViewExtended */,
+				11F00B502CEFE55C00C21098 /* FirebaseRemoteConfig */,
 			);
 			productName = "pathly-vpn";
 			productReference = 11DAD6AA2CDC69520051A2F2 /* pathly-vpn.app */;
@@ -705,6 +867,13 @@
 			packageReferences = (
 				11DAD6E62CDC71D00051A2F2 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				1126A8942CDEC3DD00C035AB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				11F00B0A2CEE66A300C21098 /* XCRemoteSwiftPackageReference "ios-branch-deep-linking" */,
+				11F00B2D2CEE6CAD00C21098 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+				11F00B302CEE6CE200C21098 /* XCRemoteSwiftPackageReference "SkarbSDK" */,
+				11F00B332CEE713400C21098 /* XCRemoteSwiftPackageReference "ScreenshotPreventing" */,
+				11F00B362CEE718000C21098 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				11F00B3D2CEE772900C21098 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				11F00B482CEFDC8F00C21098 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 			);
 			productRefGroup = 11DAD6AB2CDC69520051A2F2 /* Products */;
 			projectDirPath = "";
@@ -720,6 +889,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F00B582CF0154300C21098 /* scanning.json in Resources */,
 				11DAD70C2CDCE2890051A2F2 /* SFProText-LightItalic.ttf in Resources */,
 				11DAD7092CDCE2890051A2F2 /* SFProText-Heavy.ttf in Resources */,
 				11DAD7082CDCE2890051A2F2 /* SFProText-BoldItalic.ttf in Resources */,
@@ -731,10 +901,13 @@
 				11DAD6B72CDC69530051A2F2 /* Assets.xcassets in Resources */,
 				11DAD6BA2CDC69530051A2F2 /* Base in Resources */,
 				11DAD7102CDCE2890051A2F2 /* SFProText-RegularItalic.ttf in Resources */,
+				11F00B2C2CEE6BE100C21098 /* GoogleService-Info.plist in Resources */,
 				11DAD70F2CDCE2890051A2F2 /* SFProText-Regular.ttf in Resources */,
 				11DAD70D2CDCE2890051A2F2 /* SFProText-Medium.ttf in Resources */,
 				11DAD70E2CDCE2890051A2F2 /* SFProText-MediumItalic.ttf in Resources */,
+				11F00B562CF0154300C21098 /* grow_offer.json in Resources */,
 				11DAD7112CDCE2890051A2F2 /* SFProText-Semibold.ttf in Resources */,
+				11F00B572CF0154300C21098 /* Load.json in Resources */,
 				11DAD7122CDCE2890051A2F2 /* SFProText-SemiboldItalic.ttf in Resources */,
 				11DAD6B52CDC69520051A2F2 /* Base in Resources */,
 				11DAD6CC2CDC6AC00051A2F2 /* swiftgen.yml in Resources */,
@@ -757,6 +930,7 @@
 				11DAD7152CDCE39D0051A2F2 /* Styles.swift in Sources */,
 				1187513D2CE0DB8F00B399CC /* PrivacyComponents.swift in Sources */,
 				11DAD6D82CDC6C3A0051A2F2 /* SplashPresenter.swift in Sources */,
+				11F00B3C2CEE75F300C21098 /* AnalyticService.swift in Sources */,
 				118751592CE1794C00B399CC /* IPInfo.swift in Sources */,
 				11DAD6C82CDC69D00051A2F2 /* AppCoordinator.swift in Sources */,
 				1177CDEB2CDDFC4600ED4B83 /* LocationsPresenter.swift in Sources */,
@@ -765,8 +939,12 @@
 				11684D1F2CDF79D200049333 /* Extension+String.swift in Sources */,
 				118751422CE0DDFD00B399CC /* SinglePaywallViewController.swift in Sources */,
 				118751442CE0DE1C00B399CC /* MultyPaywallViewController.swift in Sources */,
+				11F00B3A2CEE728000C21098 /* Funnel.swift in Sources */,
 				1177CDD52CDDD80200ED4B83 /* DataComponents.swift in Sources */,
+				11F00B292CEE688A00C21098 /* FunnelLoaderViewController.swift in Sources */,
+				11F00B232CEE688A00C21098 /* FunnelFlowScanPhoneViewController.swift in Sources */,
 				11DAD6B22CDC69520051A2F2 /* ViewController.swift in Sources */,
+				11F00B432CEE781800C21098 /* Extension+UIColor.swift in Sources */,
 				1187515C2CE1B4DA00B399CC /* VPNButtonView.swift in Sources */,
 				1187513B2CE0DB8100B399CC /* PrivacyViewController.swift in Sources */,
 				1126A89B2CDEC57200C035AB /* ApplicationEndpoint.swift in Sources */,
@@ -774,30 +952,40 @@
 				1126A8912CDEC22D00C035AB /* NetworkService.swift in Sources */,
 				11DAD7202CDCF9540051A2F2 /* VPNViewController.swift in Sources */,
 				1177CDDF2CDDE49C00ED4B83 /* SettingCell.swift in Sources */,
+				11F00B452CEE787500C21098 /* AnalyticValues.swift in Sources */,
 				114E4CB52CE6E52B00BF8CC7 /* KeychainWrapper.swift in Sources */,
 				1177CDE92CDDFC3B00ED4B83 /* LocationsViewController.swift in Sources */,
 				1177CDD82CDDDB1D00ED4B83 /* DataCell.swift in Sources */,
 				118751542CE178DD00B399CC /* BaseEndpoint.swift in Sources */,
 				11DAD6F22CDC7F9F0051A2F2 /* Constants.swift in Sources */,
 				1177CDE42CDDF8FD00ED4B83 /* VPNPresenter.swift in Sources */,
+				11F00B4F2CEFE3E700C21098 /* Extension+Skarb.swift in Sources */,
+				11F00B212CEE688A00C21098 /* FunnelCheckYouPhoneView.swift in Sources */,
 				11DAD6EB2CDC738C0051A2F2 /* PageControlView.swift in Sources */,
 				11DAD6AE2CDC69520051A2F2 /* AppDelegate.swift in Sources */,
 				1177CDF02CDE06B200ED4B83 /* LocationCell.swift in Sources */,
 				1177CDE62CDDF90E00ED4B83 /* VPNComponents.swift in Sources */,
 				118751572CE178F300B399CC /* Server.swift in Sources */,
+				11F00B242CEE688A00C21098 /* FunnelCheckingYourPhoneView.swift in Sources */,
 				11DAD71D2CDCF9460051A2F2 /* DataViewController.swift in Sources */,
+				11F00B252CEE688A00C21098 /* FunnelFlowScanPhoneRiskCategoryView.swift in Sources */,
 				114E4CB62CE6E52B00BF8CC7 /* Observer.swift in Sources */,
 				11DAD6E02CDC6F360051A2F2 /* Fonts.swift in Sources */,
 				11DAD6DE2CDC6F360051A2F2 /* Localizable.swift in Sources */,
 				118751462CE0E0CE00B399CC /* CommonPaywallViewController.swift in Sources */,
 				118751402CE0DD8300B399CC /* PaywallPresenter.swift in Sources */,
+				11F00B2A2CEE688A00C21098 /* FunnelCoordinator.swift in Sources */,
 				1177CDED2CDDFC5000ED4B83 /* LocationsComponents.swift in Sources */,
 				1187514E2CE1099700B399CC /* StoreService.swift in Sources */,
+				11F00B262CEE688A00C21098 /* FunnelFlowScanPhoneView.swift in Sources */,
 				11DAD6F92CDCDCD30051A2F2 /* OnboardPresenter.swift in Sources */,
 				1177CDD32CDDD7F600ED4B83 /* DataPresenter.swift in Sources */,
 				1126A89F2CDEC65200C035AB /* Environment.swift in Sources */,
+				11F00B222CEE688A00C21098 /* FunnelFlowCheckPhoneViewController.swift in Sources */,
+				11F00B272CEE688A00C21098 /* FunnelFlowPresenter.swift in Sources */,
 				11DAD6F52CDCDCB10051A2F2 /* OnboardViewController.swift in Sources */,
 				1126A89D2CDEC5B400C035AB /* StatusResponse.swift in Sources */,
+				11F00B282CEE688A00C21098 /* FunnelFlowView.swift in Sources */,
 				1177CDE22CDDF35A00ED4B83 /* CountryView.swift in Sources */,
 				11DAD6E52CDC714A0051A2F2 /* ViewFactory.swift in Sources */,
 				114E4CB42CE6E52B00BF8CC7 /* KeychainItemAccessibility.swift in Sources */,
@@ -819,6 +1007,7 @@
 				114E4CA92CE6AF9B00BF8CC7 /* CircularView.swift in Sources */,
 				11DAD7232CDCF9600051A2F2 /* SettingsViewController.swift in Sources */,
 				1177CDDA2CDDE30000ED4B83 /* SettingsPresenter.swift in Sources */,
+				11F00B472CEFCC6900C21098 /* SubscribeEventRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -993,7 +1182,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.set.pathlypro;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ovulen.minter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1027,7 +1216,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.set.pathlypro;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ovulen.minter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -1079,6 +1268,62 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		11F00B0A2CEE66A300C21098 /* XCRemoteSwiftPackageReference "ios-branch-deep-linking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BranchMetrics/ios-branch-deep-linking";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 3.7.0;
+			};
+		};
+		11F00B2D2CEE6CAD00C21098 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+		11F00B302CEE6CE200C21098 /* XCRemoteSwiftPackageReference "SkarbSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bitlica/SkarbSDK.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.6.19;
+			};
+		};
+		11F00B332CEE713400C21098 /* XCRemoteSwiftPackageReference "ScreenshotPreventing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yoxisem544/ScreenshotPreventing.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+		11F00B362CEE718000C21098 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+		11F00B3D2CEE772900C21098 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+		11F00B482CEFDC8F00C21098 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1091,6 +1336,56 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 11DAD6E62CDC71D00051A2F2 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		11F00B0B2CEE66A300C21098 /* BranchSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11F00B0A2CEE66A300C21098 /* XCRemoteSwiftPackageReference "ios-branch-deep-linking" */;
+			productName = BranchSDK;
+		};
+		11F00B2E2CEE6CAD00C21098 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11F00B2D2CEE6CAD00C21098 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+		11F00B312CEE6CE200C21098 /* SkarbSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11F00B302CEE6CE200C21098 /* XCRemoteSwiftPackageReference "SkarbSDK" */;
+			productName = SkarbSDK;
+		};
+		11F00B342CEE713400C21098 /* ScreenshotPreventing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11F00B332CEE713400C21098 /* XCRemoteSwiftPackageReference "ScreenshotPreventing" */;
+			productName = ScreenshotPreventing;
+		};
+		11F00B372CEE718000C21098 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11F00B362CEE718000C21098 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+		11F00B3E2CEE772900C21098 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11F00B3D2CEE772900C21098 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		11F00B402CEE772900C21098 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11F00B3D2CEE772900C21098 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		11F00B492CEFDC8F00C21098 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11F00B482CEFDC8F00C21098 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		11F00B4B2CEFDC8F00C21098 /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11F00B482CEFDC8F00C21098 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+		11F00B502CEFE55C00C21098 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11F00B3D2CEE772900C21098 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

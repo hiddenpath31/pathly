@@ -61,7 +61,7 @@ protocol StoreServiceInterface {
     var didUpdate: Completion? { get set }
     
     func load(completion: Completion?)
-    func pay(productId: String)
+    func pay(productId: String, completion: ((String?) -> Void)?)
 }
 
 final class StoreService {
@@ -80,9 +80,10 @@ final class StoreService {
     private var products: [Product] = []
     private var productsLoaded = false
     private var updates: Task<Void, Never>? = nil
+    
     var didUpdate: Completion?
     
-    private(set) var purchasedProductIDs = Set<String>() {
+    var purchasedProductIDs = Set<String>() {
         didSet {
             self.didUpdate?()
         }
@@ -163,15 +164,18 @@ final class StoreService {
         }
     }
     
-    func pay(productId: String) {
+    func pay(productId: String, completion: ((String?) -> Void)?) {
         guard let product = self.products.first(where: { $0.id == productId }) else {
             print("Продукт с ID \(productId) не найден")
+            completion?("Продукт с ID \(productId) не найден")
             return
         }
         Task {
             do {
                 try await self.purchase(product)
+                completion?(nil)
             } catch {
+                completion?(error.localizedDescription)
                 print("Ошибка оплаты: \(error)")
             }
         }

@@ -10,11 +10,19 @@ import SnapKit
 
 protocol SplashView: AnyObject {
     var presenter: SplashPresenterInterface? { get set }
+    
+    func updateUI(mode: SplashMode)
 }
 
 class SplashViewController: UIViewController {
 
     var presenter: SplashPresenterInterface?
+    
+    private lazy var activityView: UIActivityIndicatorView = {
+        var view = UIActivityIndicatorView(style: .large)
+        view.startAnimating()
+        return view
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +32,7 @@ class SplashViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    private func setupUI() {
+    private func organicSetupUI() {
         self.view.backgroundColor = Asset.backgroundColor.color
         
         let vStack = ViewFactory.stack(.vertical, spacing: 0)
@@ -56,6 +64,18 @@ class SplashViewController: UIViewController {
         }
     }
     
+    private func funnelSetupUI() {
+        self.view.addSubview(self.activityView)
+        self.activityView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.size.equalTo(134)
+        }
+    }
+    
+    private func setupUI() {
+        self.view.backgroundColor = .black
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -70,5 +90,14 @@ class SplashViewController: UIViewController {
 }
 
 extension SplashViewController: SplashView {
+    
+    func updateUI(mode: SplashMode) {
+        switch mode {
+            case .organic:
+                self.organicSetupUI()
+            case .funnel:
+                self.funnelSetupUI()
+        }
+    }
     
 }

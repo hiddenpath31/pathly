@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkarbSDK
 
 protocol PaywallPresenterInterface {
     var view: PaywallView? { get set }
@@ -21,15 +22,19 @@ class PaywallPresenter {
     var didEvent: PaywallViewEventHandler?
 
     private var storeService: StoreServiceInterface
+    private var apiService: APINetworkServiceInterface
+    private var storageService: StorageServiceInterface
     private var type: Paywall
     private var products: [ProductDTO] = []
     private var current: ProductDTO? {
         return products.first(where: { $0.isSelected == true })
     }
     
-    init(view: PaywallView, storeService: StoreServiceInterface, type: Paywall) {
+    init(view: PaywallView, storeService: StoreServiceInterface, apiService: APINetworkServiceInterface, storageService: StorageServiceInterface, type: Paywall) {
         self.view = view
         self.storeService = storeService
+        self.storageService = storageService
+        self.apiService = apiService
         self.type = type
     }
     
@@ -65,20 +70,48 @@ extension PaywallPresenter: PaywallPresenterInterface {
     func viewDidLoad() {
         setupBindings()
 
-        self.products = storeService.displayProducts
+        self.products = storeService.displayProducts.map({ product in
+            var p = product
+            if let description = self.storageService.remoteRespone?.subscriptions?.first(where: { $0.productId == product.id })?.description {
+                p.description = description
+            }
+            return p
+        })
         
         switch type {
             case .multy:
                 self.view?.display(products: self.products)
-            case .single:
-                self.view?.display(productDescription: self.current?.singleDescription ?? "")
+                SkarbSDK.sendTest(name: "pw_one", group: "")
+            case .single(let dismissDelay):
+                SkarbSDK.sendTest(name: "pw_threelong", group: "")
+                self.view?.display(
+                    productDescription: self.current?.singleDescription ?? "",
+                    dismissDelay: dismissDelay
+                )
         }
+        
     }
     
     func pay() {
         if let current = current {
-            self.storeService.pay(productId: current.id)
+            self.view?.startLoading()
+            self.storeService.pay(productId: current.id, completion: { [weak self] errorString in
+                self?.view?.stopLoading()
+                if errorString == nil {
+                    self?.trackSubscribeEvent(productId: current.id)
+                }
+            })
         }
+    }
+    
+    private func trackSubscribeEvent(productId: String) {
+        let requestEvent = EventRequest(
+            api_key: Constants.apiKey,
+            event: .subscribe,
+            product: productId,
+            af_data: AnalyticsValues.conversionInfo
+        )
+        self.apiService.application.sendEvent(requestData: requestEvent)
     }
     
     func productDidSelect(id: String) {

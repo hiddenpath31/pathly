@@ -9,14 +9,17 @@ import Foundation
 import UIKit
 
 protocol Paylable {
-    func showPaywall(storeService: StoreServiceInterface, type: Paywall)
+    func showPaywall(storeService: StoreServiceInterface, storageService: StorageServiceInterface, type: Paywall)
 }
 
 extension Paylable where Self: UIViewController {
 
-    func showPaywall(storeService: StoreServiceInterface, type: Paywall) {
+    func showPaywall(storeService: StoreServiceInterface, storageService: StorageServiceInterface, type: Paywall) {
+        let apiService: APINetworkServiceInterface = APINetworkService()
         let components = PaywallComponents.make(
-            storeService: storeService,
+            storeService: storeService, 
+            apiService: apiService, 
+            storageService: storageService,
             type: type
         )
         components.viewController.modalPresentationStyle = .fullScreen

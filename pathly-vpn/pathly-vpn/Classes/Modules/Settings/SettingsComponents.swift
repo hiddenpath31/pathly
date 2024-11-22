@@ -11,11 +11,12 @@ struct SettingsComponents {
     var viewController: UIViewController
     var presenter: SettingsPresenterInterface
     
-    static func make(storeService: StoreServiceInterface) -> SettingsComponents {
+    static func make(storeService: StoreServiceInterface, storageService: StorageServiceInterface) -> SettingsComponents {
         let viewController = SettingsViewController()
         let presenter = SettingsPresenter(
             view: viewController,
-            storeService: storeService
+            storeService: storeService,
+            storageService: storageService
         )
         viewController.presenter = presenter
         return SettingsComponents(viewController: viewController, presenter: presenter)

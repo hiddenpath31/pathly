@@ -127,6 +127,36 @@
           "referenceName" : "Year",
           "subscriptionGroupID" : "083918EE",
           "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "0.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "D317A418",
+          "introductoryOffer" : {
+            "displayPrice" : "0.99",
+            "internalID" : "A9AFAAA9",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P3D"
+          },
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.set.pathlypro.week",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Week",
+          "subscriptionGroupID" : "083918EE",
+          "type" : "RecurringSubscription"
         }
       ]
     }

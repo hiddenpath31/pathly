@@ -10,6 +10,11 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  /// Localizable.strings
+  ///   pathly-vpn
+  /// 
+  ///   Created by Александр on 07.11.2024.
+  internal static let error = L10n.tr("Localizable", "Error", fallback: "Error")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

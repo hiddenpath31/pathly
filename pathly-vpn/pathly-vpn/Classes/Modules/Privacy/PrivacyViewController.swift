@@ -9,6 +9,8 @@ import UIKit
 
 class PrivacyViewController: UIViewController {
 
+    var didDismiss: Completion?
+    
     private lazy var textView: UITextView = {
         var view = UITextView()
         view.font = FontFamily.SFProText.regular.font(size: 18)
@@ -22,6 +24,12 @@ class PrivacyViewController: UIViewController {
 
         setupUI()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        self.didDismiss?()
     }
     
     private func setupUI() {

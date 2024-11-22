@@ -15,6 +15,8 @@ class TabCoordinator: Coordinator {
     private var storageService: StorageServiceInterface
     private var storeService: StoreServiceInterface
     private var apiService: APINetworkServiceInterface
+    private var autoConnect: Bool
+    private var vpnComponents: VPNComponents?
     var didLogout: Completion?
         
     private lazy var tabbarControler: UITabBarController = {
@@ -22,11 +24,12 @@ class TabCoordinator: Coordinator {
         return tabController
     }()
     
-    init(navigationController: UINavigationController, storageService: StorageServiceInterface, storeService: StoreServiceInterface, apiService: APINetworkServiceInterface) {
+    init(navigationController: UINavigationController, storageService: StorageServiceInterface, storeService: StoreServiceInterface, apiService: APINetworkServiceInterface, autoConnect: Bool) {
         self.navigationController = navigationController
         self.storeService = storeService
         self.storageService = storageService
         self.apiService = apiService
+        self.autoConnect = autoConnect
         self.setupUI()
     }
     
@@ -58,11 +61,14 @@ class TabCoordinator: Coordinator {
             vpnComponents.presenter.didShowCountry = { [weak self] in
                 self?.showLocations(navigationController: navController)
             }
+            self.vpnComponents = vpnComponents
             return navController
         }()
         let settingsNavigationController: UINavigationController = {
             let settingsComponents = SettingsComponents.make(
-                storeService: self.storeService)
+                storeService: self.storeService, 
+                storageService: self.storageService
+            )
             let navController = TabNavigationController(
                 tab: .settings,
                 root: settingsComponents.viewController
@@ -106,6 +112,12 @@ class TabCoordinator: Coordinator {
             self.storageService.isPrivacyShowed = true
             let privacyVC = PrivacyViewController()
             privacyVC.hidesBottomBarWhenPushed = true
+            privacyVC.didDismiss = { [weak self] in
+                if self?.autoConnect == true {
+                    self?.autoConnect = false
+                    self?.vpnComponents?.presenter.powerDidTap()
+                }
+            }
             navigationController.pushViewController(privacyVC, animated: true)
         }
     }

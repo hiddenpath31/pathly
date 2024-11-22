@@ -16,12 +16,12 @@ enum PaywallViewEvent {
     case privacy
 }
 
-protocol PaywallView: AnyObject {
+protocol PaywallView: AnyObject, Loadable {
     var presenter: PaywallPresenterInterface? { get set }
     
     func dismiss()
     func display(products: [ProductDTO])
-    func display(productDescription: String)
+    func display(productDescription: String, dismissDelay: Int)
 }
 
 class CommonPaywallViewController: UIViewController {
@@ -75,6 +75,15 @@ class CommonPaywallViewController: UIViewController {
         label.text = "Description"
         return label
     }()
+    private lazy var dismissButton: UIButton = {
+        let dismissButton = UIButton(type: .system)
+        dismissButton.tintColor = .white
+        dismissButton.setImage(Asset.dismiss.image, for: .normal)
+        dismissButton.addAction(UIAction(handler: { [weak self] actions in
+            self?.presenter?.didEvent?(.dismiss)
+        }), for: .touchUpInside)
+        return dismissButton
+    }()
     
     var presenter: PaywallPresenterInterface?
     
@@ -105,12 +114,6 @@ class CommonPaywallViewController: UIViewController {
         
         let titleContainerView = UIView()
         titleContainerView.addSubview(titleView)
-        let dismissButton = UIButton(type: .system)
-        dismissButton.tintColor = .white
-        dismissButton.setImage(Asset.dismiss.image, for: .normal)
-        dismissButton.addAction(UIAction(handler: { [weak self] actions in
-            self?.presenter?.didEvent?(.dismiss)
-        }), for: .touchUpInside)
         titleContainerView.addSubview(dismissButton)
         dismissButton.snp.makeConstraints { make in
             make.right.top.equalToSuperview()
@@ -199,8 +202,13 @@ extension CommonPaywallViewController: PaywallView {
         }
     }
     
-    func display(productDescription: String) {
+    func display(productDescription: String, dismissDelay: Int) {
         self.descriptionLabel.text = productDescription
+        self.dismissButton.isHidden = true
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(dismissDelay), execute: {
+            self.dismissButton.isHidden = false
+        })
     }
     
 }

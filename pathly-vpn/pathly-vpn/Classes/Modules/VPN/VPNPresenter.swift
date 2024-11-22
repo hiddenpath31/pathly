@@ -106,7 +106,7 @@ class VPNPresenter {
             VPNManager.shared.disconnect()
         }
     }
-    
+
     private func connect() {
         if let cServer = currentLocation {
             VPNManager.shared.connectIKEv2(config: cServer) { (success) in
