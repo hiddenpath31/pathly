@@ -50,7 +50,7 @@ class AppCoordinator: Coordinator {
             self.showOnboard()
         } else {
             self.showTab(autoConnect: false)
-            if self.storeService.hasUnlockedPro == false {
+            if self.storeService.hasUnlockedPro == false && self.isDeeplinkOpened == false {
                 self.showPaywall()
             }
         }
@@ -147,6 +147,9 @@ class AppCoordinator: Coordinator {
     
     func showFunnel(type: FunnelFlowType) {
 //        let loaderViewController = FunnelLoaderViewController()
+        
+        self.storageService.isOnboardingShowed = true
+        self.storageService.isPrivacyShowed = true
         
         let funnelCoordinator = FunnelCoordinator(
             navigationController: navigationController,

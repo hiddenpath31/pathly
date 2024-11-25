@@ -87,6 +87,18 @@ class VPNViewController: UIViewController {
         powerView.didTap = { [weak self] in
             self?.presenter?.powerDidTap()
         }
+        
+        let clearButton = UIButton.init(type: .system)
+        clearButton.addAction(UIAction(handler: { [weak self] action in
+            self?.presenter?.clearFunnel()
+        }), for: .touchUpInside)
+        contentView.addSubview(clearButton)
+        clearButton.snp.makeConstraints { make in
+            make.left.equalTo(self.powerView.snp.right)
+            make.right.equalToSuperview()
+            make.height.equalTo(50)
+            make.centerY.equalToSuperview()
+        }
     }
     
     private func setupBindings() {

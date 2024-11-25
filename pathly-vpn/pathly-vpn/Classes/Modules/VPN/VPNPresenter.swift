@@ -14,6 +14,7 @@ protocol VPNPresenterInterface: AnyObject {
     var didShowCountry: Completion? { get set }
     
     func powerDidTap()
+    func clearFunnel()
     
     func viewDidLoad()
     func viewWillAppear()
@@ -144,6 +145,10 @@ class VPNPresenter {
     
 }
 extension VPNPresenter: VPNPresenterInterface {
+    
+    func clearFunnel() {
+        self.storageService.isFunnelShowed = false
+    }
     
     func powerDidTap() {
         self.onDidVPNConnectTapped()

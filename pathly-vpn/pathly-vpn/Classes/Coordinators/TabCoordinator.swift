@@ -85,7 +85,16 @@ class TabCoordinator: Coordinator {
         )
         self.tabbarControler.tabBar.backgroundColor = .white
         self.tabbarControler.selectedIndex = 1
-        self.showPrivacyIfNeeded(navigationController: vpnNavigationController)
+        
+        if autoConnect == true {
+            self.storageService.isPrivacyShowed = true
+            self.autoConnect = false
+            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
+                self.vpnComponents?.presenter.powerDidTap()
+            }
+        } else {
+            self.showPrivacyIfNeeded(navigationController: vpnNavigationController)
+        }
     }
     
     private func setupNavigationBar(navigationController: UINavigationController) {
