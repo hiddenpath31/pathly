@@ -7,6 +7,12 @@ public enum PurchaseResult {
     case pending
 }
 
+enum MyError: Error {
+    case userCanceled
+    case unknown
+}
+
+
 struct ProductDTO {
     var isSelected: Bool = false
     var singleDescription: String {
@@ -143,10 +149,12 @@ final class StoreService {
                 await transaction.finish()
             case .userCancelled:
                 print("Пользователь отменил покупку")
+                throw MyError.userCanceled
             case .pending:
                 print("Покупка ожидает подтверждения")
             @unknown default:
                 print("Неизвестный результат покупки")
+                throw MyError.unknown
             }
         } catch {
             print("Ошибка покупки: \(error)")

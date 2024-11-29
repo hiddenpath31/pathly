@@ -86,6 +86,7 @@ class AppCoordinator: Coordinator {
         
         if let params = parameters as? [String: AnyObject] {
             // получениe данных из params
+            
             var params = params
             
             if let referrer = params["appkey"] as? String {
