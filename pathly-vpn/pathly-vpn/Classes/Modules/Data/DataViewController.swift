@@ -30,7 +30,7 @@ class DataViewController: UIViewController {
     }()
     private lazy var checkButton: UIButton = {
         let button = ViewFactory.Buttons.base()
-        button.setTitle("Check IP Data", for: .normal)
+        button.setTitle(L10n.Data.checkIPData, for: .normal)
         button.addAction(UIAction(handler: { [weak self] action in
             self?.presenter?.checkDidTap()
         }), for: .touchUpInside)
@@ -47,7 +47,7 @@ class DataViewController: UIViewController {
     
     private func setupUI() {
         self.view.backgroundColor = Asset.backgroundColor.color
-        self.navigationItem.title = "IP Data"
+        self.navigationItem.title = L10n.Data.ipData
         
         self.view.addSubview(tableView)
         self.tableView.snp.makeConstraints { make in

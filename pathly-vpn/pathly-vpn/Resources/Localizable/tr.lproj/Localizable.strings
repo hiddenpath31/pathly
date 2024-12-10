@@ -1,0 +1,68 @@
+"Error" = "Hata";
+"Continue" = "Devam Et";
+
+"Onboard.Protect.Title" = "Bağlantınızı Korumaya Alın";
+"Onboard.Protect.Description" = "VPN'yi etkinleştirmek için dokunun ve sadece bir adımda verilerinizi anında koruyun";
+
+"Onboard.Location.Title" = "Konumunuzu Seçin";
+"Onboard.Location.Description" = "VPN'ye bağlanmak ve güvenli akışın keyfini çıkarmaya başlamak için bir ülke seçin";
+
+"Onboard.IP.Title" = "IP Verilerinizi Kontrol Edin";
+"Onboard.IP.Description" = "IP ayrıntılarını görüntüleyin ve bağlantınızın güvenli olduğunu tek bir kolay adımda doğrulayın";
+
+"VPN.Disconnect" = "Bağlantıyı Kes";
+"VPN.Fail" = "Başarısız";
+"VPN.Connecting" = "Bağlanıyor";
+"VPN.Connected" = "Bağlandı";
+"VPN.UnableToSaveVPNProfile" = "VPN Profili Kaydedilemedi";
+"VPN.UnableToLoadProfile" = "Profil Yüklenemedi";
+"VPN.CantConnect" = "Bağlanılamıyor";
+"VPN.StreamingServer" = "Akış sunucusu";
+"VPN.SelectServer" = "Sunucu Seç";
+
+"Locations.Location" = "Konum";
+"Locations.SearchLocations" = "Konumları Ara";
+
+"Tab.Data" = "Veri";
+"Tab.VPN" = "VPN";
+"Tab.Settings" = "Ayarlar";
+
+"Data.IPAddress" = "IP Adresi";
+"Data.Location" = "Konum";
+"Data.PostalCode" = "Posta Kodu";
+"Data.CountryCode" = "Ülke Kodu";
+"Data.CheckIPData" = "IP Verilerini Kontrol Et";
+"Data.IPData" = "IP Verisi";
+
+"Settings" = "Ayarlar";
+"Settings.PrivacyPolicy" = "Gizlilik Politikası";
+"Settings.ManageSubscription" = "Aboneliği Yönet";
+"Settings.RestorePurchases" = "Satın Almaları Geri Yükle";
+"Settings.HelpSupport" = "Yardım & Destek";
+"Settings.TermsOfService" = "Hizmet Şartları";
+
+"PrivacyPolicy" = "
+    SET LLC Bu Gizlilik Politikası, Apple App Store'da SET LLC tarafından yayımlanan ve mobil cihazlar ve kişisel bilgisayarlar üzerinden erişilebilen uygulamalar (Uygulama) ile SET LLC tarafından kontrol edilen web sitelerinin (Web Site, Uygulama ve Web Site, birlikte Hizmetler) kullanımına uygulanacaktır.
+
+    c1. GENEL Hizmetler Hakkında: SET LLC (SET, biz, bize, bizim) Genel Veri Koruma Yönetmeliği (GDPR) anlamında Veri Kontrolörüdür. Bu gizlilik politikası, Hizmetlerle bağlantılı olarak kişisel verilerinizi nasıl topladığımız, işlediğimiz ve kullandığımız hakkında sizi bilgilendirmeyi amaçlamaktadır.
+
+    2. TOPLADIĞIMIZ, İŞLEDİĞİMİZ VE KULLANDIĞIMIZ VERİLER
+    2.1 Genel olarak, Hizmetleri, adınız, e-posta adresiniz, posta adresiniz, telefon numaranız, finansal bilgileriniz gibi kişisel bilgilerinizi sağlamadan kullanabilirsiniz (bu tür bilgiler, tanımlanmış veya tanımlanabilir bir bireyin kişisel veya maddi durumuna ilişkin tüm bilgiler, Kişisel Veri olarak kabul edilir). Bu nedenle, başka bir şekilde doğrudan Kişisel Veri sağlamadığınız veya belirli Kişisel Verilerin bizim tarafımızdan kullanılmasına açıkça onay vermediğiniz sürece, genellikle verilerinizi kullanmayız, ancak aşağıdaki durumlar dışında:
+    2.1.1 Web Site Hakkında: Tarayıcınız, Web Siteye erişebilmesi için bazı verileri gönderir, bunlar arasında: IP adresi, talebin tarihi ve saati, tarayıcı türü, işletim sistemi, tarayıcı yazılımı dili ve sürümü yer alır.
+    2.1.2 Uygulama Hakkında: Mobil cihazınız, IP adresiniz, uygulamayı ne kadar süre kullandığınız, kullandığınız cihaz türü (örneğin, iPhone, iPad) ve uygulamadaki etkinlikler gibi bazı veriler gönderir. Bu veriler, uygulamayı sürekli olarak geliştirebilmemiz için Amplitude analitiği ile kaydedilir.
+    2.1.3 Uygulama Hakkında: Ücretli bir uygulamanın ücretsiz deneme sürümünü indirip kurmanız gibi bazı durumlarda, ücretsiz denemenizi başlatmak için geçerli bir e-posta adresi girmenizi isteyebiliriz.
+    2.1.4 E-posta Hakkında: Destek ekibimizle iletişime geçtiğinizde, destek sağlamak için gönüllü olarak bizimle paylaştığınız ekler dahil iletişim kayıtlarını saklarız.
+    2.1.5 Bizim tarafımızdan üçüncü taraf hizmetleri (örneğin, MailChimp veya CampaignMonitor) aracılığıyla gönderilen e-postalar, teslimat ve açılma oranları hakkında istatistikler toplamamıza yardımcı olan bir izleme pikseli içerebilir. Bu pikseller, çevrimiçi davranışınızla ilgili ek kişisel veriler sağlamaz. E-posta istemcinizde resimlerin görüntülenmesini devre dışı bırakabilir, ancak bu, diğer e-postalarda herhangi bir görseli görmenizi engelleyecektir. Yukarıdaki 2.1.1'den 2.1.5'e kadar açıklanan verilerin işlenmesinin yasal dayanağı, GDPR'nin 6 (1) maddesinin 1. cümlesi, f fıkrasıdır (meşru menfaatler; 2.1.1 ile ilgili olarak, bu verileri kullanma menfaati, Web Siteye erişim sağlanabilmesi için gereklidir; 2.1.2 ile ilgili olarak, bu verileri kullanma menfaati, uygulamayı sürekli geliştirme amacıdır; 2.1.3 ile ilgili olarak, bu verilerin kullanma menfaati, ücretsiz denemenizin sona erdiğini size bildirme gerekliliğinden kaynaklanmaktadır; 2.1.4 ile ilgili olarak, bu verilerin kullanma menfaati, sağladığınız desteği sağlamak içindir).
+    2.2 Yalnızca, bizden önce açıkça onay verdiğiniz durumlarda, Kişisel Verilerinizi başka amaçlar için de kullanabiliriz, ancak her özel durumda yalnızca gerekli olduğu ölçüde. Bu bölümde açıklanan verilerin işlenmesinin yasal dayanağı, GDPR'nin 6 (1) maddesinin 1. cümlesi, a fıkrasıdır (onay).
+    2.3 Kişisel Verileri, yasal olarak gerekmesi durumunda üçüncü şahıslara açıklayabiliriz (örneğin, bir mahkeme kararı veya kolluk kuvvetleri tarafından talep edilmesi halinde). Bu bölümde açıklanan verilerin işlenmesinin yasal dayanağı, GDPR'nin 6 (1) maddesinin 1. cümlesi, c fıkrasıdır (yasal yükümlülük).
+    2.4 Ayrıca, aşağıda açıklanan şekilde bazı verileri kullanabiliriz.
+
+    3. SET APPS ÇEREZ POLİTİKASI
+    3.1 SET Apps web siteleri, sitelerimizdeki deneyiminizi kişiselleştirmek için çerezler kullanır. Çerezler, web sitelerimizin hangi bölümlerinin ziyaret edildiğini, reklamlarımızın performansını ölçmemize yardımcı olur ve kullanıcı davranışları hakkında bize bilgiler vererek iletişimlerimizi ve ürünlerimizi iyileştirmemize olanak tanır. Çerezleri her zaman web tarayıcınızda devre dışı bırakabilirsiniz. Google Chrome ve Safari tarayıcılarında nasıl çalıştığını aşağıda bulabilirsiniz: Chrome: Chrome menüsündeki Ayarlara git -> Sayfayı aşağı kaydırın ve Gelişmişe tıklayın -> Gizlilik bölümünde İçerik ayarlarına tıklayın -> Çerezler kısmına tıklayın ve istediğiniz gibi değiştirin. Safari: Tercihler'e git -> Gizlilik sekmesine tıklayın -> Tüm çerezleri engelleyi seçin. Diğer tarayıcılar için lütfen sağlayıcınızın sunduğu dokümantasyona bakın.
+
+    SET Apps çerezleri, sizi kişisel olarak tanımlayan bilgiler toplamaz. Ayrıca, diğer siteler veya şirketler bizim çerezlerimiz aracılığıyla sizi izleyemez. Çerezleri devre dışı bıraktığınızda, web sitemiz size en iyi kullanıcı deneyimini sağlayamaz ve kişiselleştirilmiş bilgiler almanın fırsatını kaçırırsınız, örneğin bilgilerinizi kendi dilinizde veya fiyatları kendi para biriminizde göstermemiz gibi.
+
+    ÇEREZLER: (DAHA FAZLA ANALİZ) ARAÇLARIN KULLANIMI
+    Çerezler, web sitesini kullanırken bilgisayarınıza kaydedilir. Çerezler, web sitesine ziyaret ettiğiniz bilgisayarın sabit diskine kaydedilen küçük metin dosyalarıdır ve tarayıcınıza atanır. Çeşitli bilgilerin, çerezi ayarlayan kişi (bu durumda biz) aracılığıyla çerez kullanıcısına gönderilmesine olanak tanır. Çerezler, web sitesi teklifini daha kullanıcı dostu ve etkili hale getirmeye hizmet eder. Web sitesi, çerezleri şu şekilde kullanır: Geçici / Oturum çerezleri, Kalıcı / Ayar çerezleri, Analiz çerezleri. Geçici çerezler, tarayıcınızı kapattığınızda otomatik olarak silinir. Özellikle oturum çerezlerini içerir. Bunlar, tarayıcıda kullanıcı oturumunu tanımlayan bir oturum kimliği depolar. Oturum çerezleri, çıkış yaptığınızda veya tarayıcınızı kapattığınızda silinir. Kalıcı çerezler, Web Sitesini gelecekte tekrar ziyaret ettiğinizde bilgilerinizi ve ayarlarınızı hatırlamasına yardımcı olur. Belirli bir süre sonra otomatik olarak silinirler ve bu süre çereze bağlı olarak değişebilir. Ayrıca, web sitemizde kullanıcıların tarayıcı davranışını analiz etmek için çerezler de kullanıyoruz.
+    3.2 Web sitesi, Google, Inc. (Google) tarafından sağlanan bir web analiz hizmeti olan Google Analytics'i kullanır. Google Analytics, bilgisayarınıza yerleştirilen metin dosyaları olan çerezleri kullanarak Web Sitesini nasıl kullandığınızı analiz etmeye yardımcı olur. Çerez tarafından üretilen bilgi, web sitesini nasıl kullandığınıza dair genellikle Google'a iletilir ve Google tarafından Amerika Birleşik Devletleri'ndeki sunucularda depolanır.
+    ";

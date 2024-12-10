@@ -92,10 +92,10 @@ class CountryView: UIView {
         if let server = server {
             self.subtitleLabel.isHidden = false
             self.titleLabel.text = server.name
-            self.subtitleLabel.text = "Streaming server"
+            self.subtitleLabel.text = L10n.Vpn.streamingServer
             self.iconView.image = UIImage(named: server.country)
         } else {
-            self.titleLabel.text = "Select server"
+            self.titleLabel.text = L10n.Vpn.selectServer
             self.subtitleLabel.isHidden = true
             self.iconView.image = nil
         }

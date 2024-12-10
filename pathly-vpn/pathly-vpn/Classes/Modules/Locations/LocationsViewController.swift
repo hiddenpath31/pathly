@@ -31,7 +31,7 @@ class LocationsViewController: UIViewController {
         var view = UITextField()
         view.font = FontFamily.SFProText.regular.font(size: 13)
         view.textColor = .white
-        view.attributedPlaceholder = "Search Locations".attr
+        view.attributedPlaceholder = L10n.Locations.searchLocations.attr
             .fonted(FontFamily.SFProText.regular.font(size: 13))
             .colored(Asset.textGray.color)
         view.delegate = self
@@ -40,7 +40,7 @@ class LocationsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = "Location"
+        self.navigationItem.title = L10n.Locations.location
         self.tableView.reloadData()
     }
     

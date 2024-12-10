@@ -15,21 +15,21 @@ enum OnboardItem: CaseIterable {
     var title: String {
         switch self {
         case .protect:
-            return "Protect Your Connection"
+            return L10n.Onboard.Protect.title
         case .choose:
-            return "Choose Your Location"
+            return L10n.Onboard.Location.title
         case .check:
-            return "Check Your IP Data"
+            return L10n.Onboard.Ip.title
         }
     }
     var subtitle: String {
         switch self {
         case .protect:
-            return "Tap to activate VPN and instantly protect your data with just one simple step"
+            return L10n.Onboard.Protect.description
         case .choose:
-            return "Select a country to connect to the VPN and start enjoying secure streaming"
+            return L10n.Onboard.Location.description
         case .check:
-            return "View IP details and ensure the connection is secure in one easy action"
+            return L10n.Onboard.Ip.description
         }
     }
     var image: UIImage? {

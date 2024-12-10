@@ -27,11 +27,11 @@ enum TabItem {
     var title: String {
         switch self {
             case .data:
-                return "Data"
+                return L10n.Tab.data
             case .vpn:
-                return "VPN"
+                return L10n.Tab.vpn
             case .settings:
-                return "Settings"
+                return L10n.Tab.settings
         }
     }
 }

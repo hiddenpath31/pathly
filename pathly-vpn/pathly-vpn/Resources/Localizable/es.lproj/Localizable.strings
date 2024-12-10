@@ -1,0 +1,69 @@
+"Error" = "Error";
+"Continue" = "Continuar";
+
+"Onboard.Protect.Title" = "Protege tu Conexión";
+"Onboard.Protect.Description" = "Toca para activar el VPN y proteger tus datos al instante con un solo paso";
+
+"Onboard.Location.Title" = "Elige tu Ubicación";
+"Onboard.Location.Description" = "Selecciona un país para conectarte al VPN y comenzar a disfrutar de un streaming seguro";
+
+"Onboard.IP.Title" = "Verifica tus Datos de IP";
+"Onboard.IP.Description" = "Consulta los detalles del IP y asegúrate de que la conexión sea segura con una sola acción";
+
+"VPN.Disconnect" = "Desconectar";
+"VPN.Fail" = "Fallo";
+"VPN.Connecting" = "Conectando";
+"VPN.Connected" = "Conectado";
+"VPN.UnableToSaveVPNProfile" = "No se pudo guardar el perfil de VPN";
+"VPN.UnableToLoadProfile" = "No se pudo cargar el perfil";
+"VPN.CantConnect" = "No se puede conectar";
+"VPN.StreamingServer" = "Servidor de streaming";
+"VPN.SelectServer" = "Seleccionar servidor";
+
+"Locations.Location" = "Ubicación";
+"Locations.SearchLocations" = "Buscar Ubicaciones";
+
+"Tab.Data" = "Datos";
+"Tab.VPN" = "VPN";
+"Tab.Settings" = "Configuraciones";
+
+"Data.IPAddress" = "Dirección IP";
+"Data.Location" = "Ubicación";
+"Data.PostalCode" = "Código Postal";
+"Data.CountryCode" = "Código de País";
+"Data.CheckIPData" = "Verificar Datos de IP";
+"Data.IPData" = "Datos de IP";
+
+"Settings" = "Configuraciones";
+"Settings.PrivacyPolicy" = "Política de Privacidad";
+"Settings.ManageSubscription" = "Gestionar Suscripción";
+"Settings.RestorePurchases" = "Restaurar Compras";
+"Settings.HelpSupport" = "Ayuda & Soporte";
+"Settings.TermsOfService" = "Términos de Servicio";
+
+"PrivacyPolicy" = "
+    SET LLC Esta política de privacidad se aplica a las aplicaciones distribuidas en la Apple App Store por SET LLC y accesibles a través de dispositivos móviles y computadoras personales (la App), y el uso del sitio web que es controlado por SET LLC en general (sitio web, aplicaciones y sitio web en conjunto con los servicios).
+
+    c1. Generalidades sobre el servicio: SET LLC (SET, nosotros, nuestro o nuestros) es el controlador de datos según lo definido en el Reglamento General de Protección de Datos (GDPR). Esta política de privacidad tiene como objetivo informarle sobre cómo recopilamos, procesamos y utilizamos (uso) su información personal en relación con los servicios.
+
+    2. Información que recopilamos, procesamos y utilizamos
+    2.1 En general, puede usar los servicios sin proporcionar información personal como nombre, dirección de correo electrónico, dirección postal, número de teléfono, datos financieros (cualquier dato relacionado con la situación personal o material de una persona identificada o identificable se denomina datos personales). Por lo tanto, si no nos proporciona directamente datos personales de ninguna otra manera o no nos da su consentimiento para usar ciertos datos personales, no utilizaremos sus datos en general, excepto en los siguientes casos:
+    2.1.1 Con respecto al sitio web: Su navegador envía ciertos datos para permitir el acceso al sitio web, incluidos la dirección IP, la fecha y la hora de la solicitud, el tipo de navegador, el sistema operativo, el idioma y la versión del software del navegador.
+    2.1.2 Con respecto a la App: Se envían ciertos datos desde su dispositivo móvil, incluidos la dirección IP, la duración de su uso de la App y el tipo de dispositivo que está utilizando (por ejemplo, iPhone, iPad), así como los eventos dentro de la App registrados mediante el uso de Amplitude Analytics para darnos la oportunidad de mejorar continuamente la aplicación.
+    2.1.3 Con respecto a la App: En algunos casos, como la descarga e instalación de una prueba gratuita de la App de pago, le pediremos que ingrese una dirección de correo electrónico válida para comenzar la prueba gratuita.
+    2.1.4 Con respecto al correo electrónico: Mantendremos un registro de las comunicaciones, incluidas las partes adjuntas y la información que elija compartir con nosotros para resolver cualquier problema cuando se comunique con nuestro equipo de soporte.
+    2.1.5 Los correos electrónicos enviados por nosotros a través de servicios de terceros, como MailChimp o CampaignMonitor, pueden contener un píxel de seguimiento que nos ayuda a recopilar estadísticas sobre las tasas de entrega y apertura de nuestros correos electrónicos. Estos píxeles no proporcionan información adicional sobre su identidad o su comportamiento en línea. Puede desactivar la visualización de imágenes en su cliente de correo electrónico, lo que desactivará esta función. Sin embargo, no podrá ver imágenes en otros correos electrónicos que reciba. La base legal para el procesamiento de los datos descritos en las secciones 2.1.1 a 2.1.5 (si esos datos son considerados datos personales) es el Art. 6 (1) de la Ley General de Protección de Datos (GDPR) en el primer párrafo lit. f (intereses legítimos; con respecto a la sección 2.1.1 los intereses legítimos de usar estos datos son que el sitio web no puede ser accedido por los clientes y/o usuarios si no se proporcionan estos datos; con respecto a la sección 2.1.2 los intereses legítimos son que tenemos un interés legítimo en mejorar continuamente la aplicación; con respecto a la sección 2.1.3 el interés legítimo es que necesitamos informarle sobre el final de su prueba gratuita; con respecto a la sección 2.1.4 el interés legítimo es que necesitamos usar los datos para brindarle soporte solicitado).
+    2.2 Solo en el caso de que haya dado su consentimiento por adelantado, utilizaremos sus datos personales para otros fines, pero solo en la medida en que sea necesario en cada caso. La base legal para el procesamiento de los datos descritos en la sección 2.2 es el Art. 6 (1) del primer párrafo lit. a del GDPR (consentimiento).
+    2.3 Podemos divulgar datos personales a terceros cuando tal divulgación sea requerida por la ley (por ejemplo, cuando se reciba una solicitud de un tribunal o de las autoridades de aplicación de la ley). La base legal para el procesamiento de los datos descritos en la sección 2.3 es el Art. 6 (1) del primer párrafo lit. c del GDPR (obligación legal).
+    2.4 Podemos usar ciertos tipos de datos como se indica en la sección 3 a continuación.
+
+    3. Política de cookies de la App SET
+    3.1 El sitio web de SET Apps utiliza cookies para personalizar su experiencia en nuestro sitio. Las cookies nos permiten saber qué partes de nuestro sitio son visitadas por las personas, nos ayudan a medir la efectividad de los anuncios y proporcionan información sobre el comportamiento de los usuarios para que podamos mejorar nuestra comunicación y productos. Puede desactivar el uso de cookies en cualquier momento en su navegador. Cómo hacerlo en los navegadores Google Chrome y Safari: Chrome: Vaya a la configuración en el menú de Chrome (barra de herramientas de Chrome) -> desplácese hacia abajo y haga clic en avanzado -> en la sección de privacidad, haga clic en la configuración de contenido -> haga clic en cookies y modifique según sea necesario. Safari: Vaya a Configuración -> haga clic en la pestaña Privacidad -> seleccione bloquear todas las cookies. Para otros navegadores, consulte la documentación proporcionada por su proveedor.
+
+    Las cookies de SET Apps no recopilan información que pueda identificarle personalmente. Además, los sitios web o empresas de terceros no podrán rastrearlo a través de nuestras cookies. Cuando desactive el uso de cookies, nuestro sitio no podrá ofrecerle la mejor experiencia de usuario y se perderá la oportunidad de recibir información personalizada, como mostrar información en su idioma o mostrar precios en su moneda.
+
+    Cookies: El uso de herramientas de análisis adicionales
+    Las cookies se almacenan en su computadora cuando usa el sitio web. Una cookie es un pequeño archivo de texto que se guarda en el disco duro de la computadora que utiliza para visitar el sitio web y se asigna a su navegador. Algunas de las informaciones se envían al propietario de la cookie (en este caso, nosotros). Las cookies hacen que la prestación del servicio en el sitio web sea más amigable para el usuario y más eficiente en general. El sitio web usa cookies en los siguientes ámbitos: cookies temporales/sesión, cookies permanentes/configuración, cookies de análisis. Las cookies temporales se eliminan automáticamente cuando cierra el navegador, incluidos los cookies de sesión. Estas cookies almacenan el ID de sesión que ayuda a identificar la sesión del usuario en el navegador. Las cookies de sesión se eliminan cuando cierra sesión o cierra el navegador. Las cookies permanentes ayudan al sitio web a recordar sus datos y configuraciones cuando visita el sitio web en el futuro. Estas cookies se eliminan automáticamente después de un período de tiempo que varía según la cookie. Además, usamos cookies en nuestro sitio web que ayudan a analizar el comportamiento de navegación del usuario.
+    3.2 El sitio web utiliza Google Analytics, un servicio de análisis web proporcionado por Google, Inc. (Google). Google Analytics utiliza cookies, que son archivos de texto que se colocan en su computadora para analizar cómo utiliza el sitio web. La información generada por las cookies sobre su uso del sitio web se enviará a y almacenará en los servidores de Google en los EE. UU., mayormente.
+    Con la función de anonimización de IP habilitada en el sitio web, su dirección IP será anonimizada dentro de los países miembros de la Unión Europea o en países que han firmado el acuerdo del Espacio Económico Europeo. Toda la dirección IP se enviará a los servidores de Google en EE. UU. y se anonimizará allí. En caso de que no se encuentre esta información en el servidor, Google usará esta información para evaluar el uso del sitio web, recopilar informes sobre la actividad del sitio web y proporcionar otros servicios relacionados con el uso del sitio web y de Internet. La dirección IP enviada por su navegador a Google Analytics no se vinculará con otros datos que Google almacene.
+    ";

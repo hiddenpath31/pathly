@@ -1,0 +1,61 @@
+"Error" = "Fehler";
+"Continue" = "Weiter";
+
+"Onboard.Protect.Title" = "Schützen Sie Ihre Verbindung";
+"Onboard.Protect.Description" = "Tippen Sie, um das VPN zu aktivieren und Ihre Daten mit nur einem einfachen Schritt sofort zu schützen";
+
+"Onboard.Location.Title" = "Wählen Sie Ihren Standort";
+"Onboard.Location.Description" = "Wählen Sie ein Land aus, um sich mit dem VPN zu verbinden und sicher zu streamen";
+
+"Onboard.IP.Title" = "Prüfen Sie Ihre IP-Daten";
+"Onboard.IP.Description" = "Sehen Sie sich IP-Details an und stellen Sie sicher, dass die Verbindung sicher ist – in nur einem Schritt";
+
+"VPN.Disconnect" = "Trennen";
+"VPN.Fail" = "Fehlgeschlagen";
+"VPN.Connecting" = "Verbinden";
+"VPN.Connected" = "Verbunden";
+"VPN.UnableToSaveVPNProfile" = "VPN-Profil konnte nicht gespeichert werden";
+"VPN.UnableToLoadProfile" = "Profil konnte nicht geladen werden";
+"VPN.CantConnect" = "Keine Verbindung möglich";
+"VPN.StreamingServer" = "Streaming-Server";
+"VPN.SelectServer" = "Server auswählen";
+
+"Locations.Location" = "Standort";
+"Locations.SearchLocations" = "Standorte durchsuchen";
+
+"Tab.Data" = "Daten";
+"Tab.VPN" = "VPN";
+"Tab.Settings" = "Einstellungen";
+
+"Data.IPAddress" = "IP-Adresse";
+"Data.Location" = "Standort";
+"Data.PostalCode" = "Postleitzahl";
+"Data.CountryCode" = "Ländercode";
+"Data.CheckIPData" = "IP-Daten prüfen";
+"Data.IPData" = "IP-Daten";
+
+"Settings" = "Einstellungen";
+"Settings.PrivacyPolicy" = "Datenschutzrichtlinie";
+"Settings.ManageSubscription" = "Abonnement verwalten";
+"Settings.RestorePurchases" = "Einkäufe wiederherstellen";
+"Settings.HelpSupport" = "Hilfe & Support";
+"Settings.TermsOfService" = "Nutzungsbedingungen";
+
+"PrivacyPolicy" = "
+    SET LLC Diese Datenschutzrichtlinie gilt für die Anwendungen, die von der LLC «SET» im Apple App Store veröffentlicht wurden und von mobilen Geräten und Computern aus zugänglich sind (die App), sowie für die Nutzung der von der LLC «SET» betriebenen Websites im Allgemeinen (zusammen die Dienste: Website und App).
+
+    1. ALLGEMEINES Bezüglich der Dienste: Die LLC «SET» (SET, wir, uns oder unser) ist der Datenverantwortliche im Sinne der Datenschutz-Grundverordnung (DSGVO).
+    Diese Datenschutzrichtlinie informiert Sie darüber, wie wir personenbezogene Daten im Zusammenhang mit den Diensten erheben, verarbeiten und nutzen (Verwenden).
+
+    2. ERHOBENE, VERARBEITETE UND GENUTZTE DATEN
+    2.1 Allgemein können Sie die Dienste nutzen, ohne persönliche Daten wie z. B. Ihren Namen, Ihre E-Mail-Adresse, Ihre Postanschrift, Ihre Telefonnummer oder Ihre Finanzdaten anzugeben (alle diese Informationen über die persönlichen oder sachlichen Verhältnisse einer identifizierten oder identifizierbaren natürlichen Person sind zusammengefasst „personenbezogene Daten“). Wenn Sie uns solche Daten nicht direkt zur Verfügung stellen oder deren Nutzung aktiv zustimmen, verwenden wir diese Daten in der Regel nicht, außer in folgenden Fällen:
+    2.1.1 Website: Ihr Browser übermittelt bestimmte Daten, damit er auf die Website zugreifen kann, nämlich: IP-Adresse, Datum und Uhrzeit der Anfrage, Browsertyp, Betriebssystem, Sprache und Version der Browsersoftware.
+    2.1.2 App: Ihr mobiles Gerät überträgt bestimmte Daten, nämlich Ihre IP-Adresse, die Zeiträume, in denen Sie die App verwenden, und den Gerätetyp (z. B. iPhone, iPad) sowie Ereignisse innerhalb der App, die mit Amplitude Analytics erfasst werden, um uns die Möglichkeit zu geben, die App kontinuierlich zu verbessern.
+    2.1.3 App: In bestimmten Fällen, z. B. beim Herunterladen und Installieren einer kostenlosen Testversion einer kostenpflichtigen App, fragen wir nach einer gültigen E-Mail-Adresse, um die Testversion zu starten.
+    2.1.4 E-Mail: Wir speichern eine Aufzeichnung der Kommunikation einschließlich Anhängen und Informationen, die Sie uns freiwillig mitteilen, wenn Sie unser Support-Team kontaktieren.
+    2.1.5 E-Mails, die wir über Drittanbieter wie MailChimp oder CampaignMonitor versenden, können Tracking-Pixel enthalten, die uns helfen, Statistiken über Zustell- und Öffnungsraten zu sammeln. Diese Pixel liefern uns jedoch keine zusätzlichen persönlichen Daten über Sie oder Ihr Online-Verhalten. Sie können die Bilddarstellung in Ihrem E-Mail-Client deaktivieren, wodurch diese Funktion deaktiviert wird, jedoch werden Sie keine Bilder in den empfangenen E-Mails sehen können.
+    Die Rechtsgrundlage für die Verarbeitung der in Abschnitt 2.1.1 bis 2.1.5 beschriebenen Daten (soweit diese als personenbezogene Daten gelten) ist Art. 6 Abs. 1 S. 1 lit. f DSGVO (berechtigte Interessen).
+
+    6. IHRE RECHTE
+    Sie haben das Recht, jederzeit Auskunft über die bei uns gespeicherten personenbezogenen Daten zu verlangen. Wenn die gesetzlichen Anforderungen erfüllt sind, haben Sie außerdem das Recht, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen oder der Verarbeitung Ihrer personenbezogenen Daten zu widersprechen. Sie haben auch das Recht, Ihre personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten (Recht auf Datenübertragbarkeit). Wenn Sie uns Ihre Zustimmung zur Nutzung personenbezogener Daten gegeben haben, können Sie diese Zustimmung jederzeit mit Wirkung für die Zukunft widerrufen.
+";

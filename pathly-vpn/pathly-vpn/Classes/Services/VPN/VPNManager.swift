@@ -19,25 +19,25 @@ enum ConnectionStatus {
         case .connect(let date):
             let now = Date()
             let time = Date.timeDifference(from: date, to: now)
-            let result = "Connected \(time)".uppercased()
+            let result = "\(L10n.Vpn.connected) \(time)".uppercased()
                 .attr
                 .colored(Asset.accentColor.color)
                 .fonted(FontFamily.SFProText.medium.font(size: 16))
             return result
         case .connection:
-            let result = "Connecting".uppercased()
+            let result = L10n.Vpn.connecting.uppercased()
                 .attr
                 .colored(.white)
                 .fonted(FontFamily.SFProText.regular.font(size: 16))
             return result
         case .disconnect:
-            let result = "Disconnect".uppercased()
+            let result = L10n.Vpn.disconnect.uppercased()
                 .attr
                 .colored(.white)
                 .fonted(FontFamily.SFProText.regular.font(size: 16))
             return result
         case .fail:
-            let result = "Fail".uppercased()
+            let result = L10n.Vpn.fail.uppercased()
                 .attr
                 .colored(.white)
                 .fonted(FontFamily.SFProText.regular.font(size: 16))
@@ -135,17 +135,17 @@ final class VPNManager: NSObject {
             self.manager.isEnabled = true
             self.saveProfile { success in
                 if !success {
-                    onError("Unable To Save VPN Profile")
+                    onError(L10n.Vpn.unableToSaveVPNProfile)
                     return
                 }
                 self.loadProfile() { success in
                     if !success {
-                        onError("Unable To Load Profile")
+                        onError(L10n.Vpn.unableToLoadProfile)
                         return
                     }
                     let result = self.startVPNTunnel()
                     if !result {
-                        onError("Can't connect")
+                        onError(L10n.Vpn.cantConnect)
                     } else {
                         onSuccess(true)
                     }

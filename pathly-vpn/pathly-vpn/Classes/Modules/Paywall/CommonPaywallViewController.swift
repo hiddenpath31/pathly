@@ -20,13 +20,43 @@ protocol PaywallView: AnyObject, Loadable {
     var presenter: PaywallPresenterInterface? { get set }
     
     func dismiss()
-    func display(products: [ProductDTO])
-    func display(productDescription: String, dismissDelay: Int)
+    func display(products: [ProductDTO], paywallLocalize: PaywallLocalize?)
+    func display(productDescription: String, dismissDelay: Int, paywallLocalize: PaywallLocalize?)
 }
 
 class CommonPaywallViewController: UIViewController {
 
     private var productViews: [ProductView] = []
+    private lazy var titleLabel: UILabel = {
+        let titleLabel = ViewFactory.label(
+            font: Styles.Fonts.largeTitle,
+            color: .white
+        )
+        titleLabel.textAlignment = .center
+        titleLabel.text = "Go Premium"
+        return titleLabel
+    }()
+    private lazy var subtitleLabel: UILabel = {
+        let subtitleLabel = ViewFactory.label(
+            font: Styles.Fonts.callout2,
+            color: Asset.textGray.color
+        )
+        subtitleLabel.textAlignment = .center
+        subtitleLabel.text = "Unlock the full power of this mobile tool\nand enjoy a digital experience like never!"
+        subtitleLabel.numberOfLines = 0
+        return subtitleLabel
+    }()
+    private lazy var actionButton: UIButton = {
+        let actionButton = ViewFactory.Buttons.base()
+        actionButton.setTitle("Start & Subscribe", for: .normal)
+        actionButton.addAction(UIAction(handler: { [weak self] action in
+            self?.presenter?.pay()
+        }), for: .touchUpInside)
+        actionButton.snp.makeConstraints { make in
+            make.height.equalTo(56)
+        }
+        return actionButton
+    }()
     private lazy var titleView: UIView = {
         var vStack = ViewFactory.stack(.vertical, spacing: 40)
         
@@ -35,21 +65,6 @@ class CommonPaywallViewController: UIViewController {
         iconView.snp.makeConstraints { make in
             make.height.equalTo(120)
         }
-        
-        let titleLabel = ViewFactory.label(
-            font: Styles.Fonts.largeTitle,
-            color: .white
-        )
-        titleLabel.textAlignment = .center
-        titleLabel.text = "Go Premium"
-        
-        let subtitleLabel = ViewFactory.label(
-            font: Styles.Fonts.callout2,
-            color: Asset.textGray.color
-        )
-        subtitleLabel.textAlignment = .center
-        subtitleLabel.text = "Unlock the full power of this mobile tool\nand enjoy a digital experience like never!"
-        subtitleLabel.numberOfLines = 0
         
         vStack.addArrangedSubview(iconView)
         vStack.addArrangedSubview(titleLabel)
@@ -74,6 +89,28 @@ class CommonPaywallViewController: UIViewController {
         label.textAlignment = .center
         label.text = "Description"
         return label
+    }()
+    private lazy var termsButton: UIButton = {
+        let termsButton = UIButton(type: .system)
+        termsButton.titleLabel?.font = Styles.Fonts.callout
+        termsButton.setTitleColor(Asset.textGray.color, for: .normal)
+        termsButton.setTitle("Terms of use", for: .normal)
+        termsButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        termsButton.addAction(UIAction(handler: { [weak self] action in
+            self?.presenter?.didEvent?(.terms)
+        }), for: .touchUpInside)
+        return termsButton
+    }()
+    private lazy var privacyButton: UIButton = {
+        let privacyButton = UIButton(type: .system)
+        privacyButton.titleLabel?.font = Styles.Fonts.callout
+        privacyButton.setTitleColor(Asset.textGray.color, for: .normal)
+        privacyButton.setTitle("Privacy Policy", for: .normal)
+        privacyButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        privacyButton.addAction(UIAction(handler: { [weak self] action in
+            self?.presenter?.didEvent?(.privacy)
+        }), for: .touchUpInside)
+        return privacyButton
     }()
     private lazy var dismissButton: UIButton = {
         let dismissButton = UIButton(type: .system)
@@ -124,31 +161,7 @@ class CommonPaywallViewController: UIViewController {
             make.centerY.equalToSuperview()
         }
         
-        let actionButton = ViewFactory.Buttons.base()
-        actionButton.setTitle("Start & Subscribe", for: .normal)
-        actionButton.addAction(UIAction(handler: { [weak self] action in
-            self?.presenter?.pay()
-        }), for: .touchUpInside)
-        actionButton.snp.makeConstraints { make in
-            make.height.equalTo(56)
-        }
-        
         let hStack = ViewFactory.stack(.horizontal, spacing: 8)
-        let termsButton = UIButton(type: .system)
-        termsButton.titleLabel?.font = Styles.Fonts.callout
-        termsButton.setTitleColor(Asset.textGray.color, for: .normal)
-        termsButton.setTitle("Terms of use", for: .normal)
-        termsButton.addAction(UIAction(handler: { [weak self] action in
-            self?.presenter?.didEvent?(.terms)
-        }), for: .touchUpInside)
-        
-        let privacyButton = UIButton(type: .system)
-        privacyButton.titleLabel?.font = Styles.Fonts.callout
-        privacyButton.setTitleColor(Asset.textGray.color, for: .normal)
-        privacyButton.setTitle("Privacy Policy", for: .normal)
-        privacyButton.addAction(UIAction(handler: { [weak self] action in
-            self?.presenter?.didEvent?(.privacy)
-        }), for: .touchUpInside)
         
         hStack.addArrangedSubview(termsButton)
         hStack.addArrangedSubview(UIView())
@@ -183,7 +196,7 @@ extension CommonPaywallViewController: PaywallView {
         }
     }
     
-    func display(products: [ProductDTO]) {
+    func display(products: [ProductDTO], paywallLocalize: PaywallLocalize?) {
         contentStack.arrangedSubviews.forEach({ $0.removeFromSuperview() })
         self.productViews.removeAll()
         
@@ -200,15 +213,31 @@ extension CommonPaywallViewController: PaywallView {
             contentStack.addArrangedSubview(productView)
             self.productViews.append(productView)
         }
+        
+        if let paywallLocalize = paywallLocalize {
+            self.titleLabel.text = paywallLocalize.titleString
+            self.subtitleLabel.text = paywallLocalize.descriptionString
+            self.actionButton.setTitle(paywallLocalize.actionButtonString, for: .normal)
+            self.termsButton.setTitle(paywallLocalize.termsOfUseString, for: .normal)
+            self.privacyButton.setTitle(paywallLocalize.privacyPolicyString, for: .normal)
+        }
     }
     
-    func display(productDescription: String, dismissDelay: Int) {
+    func display(productDescription: String, dismissDelay: Int, paywallLocalize: PaywallLocalize?) {
         self.descriptionLabel.text = productDescription
         self.dismissButton.isHidden = true
         
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(dismissDelay), execute: {
             self.dismissButton.isHidden = false
         })
+        
+        if let paywallLocalize = paywallLocalize {
+            self.titleLabel.text = paywallLocalize.titleString
+            self.subtitleLabel.text = paywallLocalize.descriptionString
+            self.actionButton.setTitle(paywallLocalize.actionButtonString, for: .normal)
+            self.termsButton.setTitle(paywallLocalize.termsOfUseString, for: .normal)
+            self.privacyButton.setTitle(paywallLocalize.privacyPolicyString, for: .normal)
+        }
     }
     
 }

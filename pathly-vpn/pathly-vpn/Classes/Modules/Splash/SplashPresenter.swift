@@ -27,6 +27,7 @@ struct RemoteResponse {
     var scanFlow: FunnelModel?
     var checkFlow: FunnelModel?
     var productLocalize: [RemoteSubscription]?
+    var paywall: PaywallLocalize?
     
     var keys: [String] {
         var k: [String] = []

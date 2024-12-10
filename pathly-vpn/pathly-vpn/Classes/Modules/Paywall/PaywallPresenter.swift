@@ -11,6 +11,7 @@ import SkarbSDK
 protocol PaywallPresenterInterface {
     var view: PaywallView? { get set }
     var didEvent: PaywallViewEventHandler? { get set }
+    var items: [SinglePaywallItem] { get }
     
     func viewDidLoad()
     func pay()
@@ -28,6 +29,15 @@ class PaywallPresenter {
     private var products: [ProductDTO] = []
     private var current: ProductDTO? {
         return products.first(where: { $0.isSelected == true })
+    }
+    var items: [SinglePaywallItem] {
+        let paywall = self.storageService.remoteRespone?.paywall ?? PaywallLocalize()
+        let items = [
+            SinglePaywallItem.secure(string: paywall.secureString),
+            SinglePaywallItem.protection(string: paywall.protectionString),
+            SinglePaywallItem.verification(string: paywall.verificationString)
+        ]
+        return items
     }
     
     init(view: PaywallView, storeService: StoreServiceInterface, apiService: APINetworkServiceInterface, storageService: StorageServiceInterface, type: Paywall) {
@@ -81,13 +91,17 @@ extension PaywallPresenter: PaywallPresenterInterface {
         
         switch type {
             case .multy:
-                self.view?.display(products: self.products)
+                self.view?.display(
+                    products: self.products,
+                    paywallLocalize: self.storageService.remoteRespone?.paywall ?? PaywallLocalize()
+                )
                 SkarbSDK.sendTest(name: "pw_one", group: "")
             case .single(let dismissDelay):
                 SkarbSDK.sendTest(name: "pw_threelong", group: "")
                 self.view?.display(
                     productDescription: self.current?.singleDescription ?? "",
-                    dismissDelay: dismissDelay
+                    dismissDelay: dismissDelay,
+                    paywallLocalize: self.storageService.remoteRespone?.paywall ?? PaywallLocalize()
                 )
         }
         
@@ -127,7 +141,7 @@ extension PaywallPresenter: PaywallPresenterInterface {
             newProduct.isSelected = product.id == id
             return newProduct
         })
-        self.view?.display(products: self.products)
+        self.view?.display(products: self.products, paywallLocalize: nil)
     }
     
 }

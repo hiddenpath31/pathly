@@ -1,0 +1,75 @@
+"Error" = "Kesalahan";
+"Continue" = "Lanjutkan";
+
+"Onboard.Protect.Title" = "Lindungi Koneksi Anda";
+"Onboard.Protect.Description" = "Ketuk untuk mengaktifkan VPN dan lindungi data Anda dengan hanya satu langkah sederhana";
+
+"Onboard.Location.Title" = "Pilih Lokasi Anda";
+"Onboard.Location.Description" = "Pilih negara untuk terhubung ke VPN dan mulai menikmati streaming yang aman";
+
+"Onboard.IP.Title" = "Periksa Data IP Anda";
+"Onboard.IP.Description" = "Lihat detail IP dan pastikan koneksi aman dalam satu langkah mudah";
+
+"VPN.Disconnect" = "Putuskan Sambungan";
+"VPN.Fail" = "Gagal";
+"VPN.Connecting" = "Menghubungkan";
+"VPN.Connected" = "Terhubung";
+"VPN.UnableToSaveVPNProfile" = "Tidak Dapat Menyimpan Profil VPN";
+"VPN.UnableToLoadProfile" = "Tidak Dapat Memuat Profil";
+"VPN.CantConnect" = "Tidak dapat terhubung";
+"VPN.StreamingServer" = "Server streaming";
+"VPN.SelectServer" = "Pilih server";
+
+"Locations.Location" = "Lokasi";
+"Locations.SearchLocations" = "Cari Lokasi";
+
+"Tab.Data" = "Data";
+"Tab.VPN" = "VPN";
+"Tab.Settings" = "Pengaturan";
+
+"Data.IPAddress" = "Alamat IP";
+"Data.Location" = "Lokasi";
+"Data.PostalCode" = "Kode Pos";
+"Data.CountryCode" = "Kode Negara";
+"Data.CheckIPData" = "Periksa Data IP";
+"Data.IPData" = "Data IP";
+
+"Settings" = "Pengaturan";
+"Settings.PrivacyPolicy" = "Kebijakan Privasi";
+"Settings.ManageSubscription" = "Kelola Langganan";
+"Settings.RestorePurchases" = "Pulihkan Pembelian";
+"Settings.HelpSupport" = "Bantuan & Dukungan";
+"Settings.TermsOfService" = "Syarat Layanan";
+
+"PrivacyPolicy" = "
+    SET LLC Kebijakan Privasi ini berlaku untuk aplikasi yang diterbitkan di Apple App Store oleh LLC «SET» dan yang dapat diakses dari perangkat seluler dan komputer pribadi (Aplikasi), serta penggunaan situs web yang dikendalikan oleh LLC «SET» secara umum (Situs Web Aplikasi, dan Situs Web bersama-sama disebut Layanan).
+
+    1. UMUM
+    Terkait Layanan: LLC «SET» (SET, kami, atau milik kami) adalah Pengontrol Data dalam arti Peraturan Perlindungan Data Umum (GDPR). Kebijakan privasi ini bertujuan untuk menginformasikan Anda tentang bagaimana kami mengumpulkan, memproses, dan menggunakan (Menggunakan) data pribadi sehubungan dengan Layanan.
+
+    2. DATA YANG KAMI KUMPULKAN, PROSES, DAN GUNAKAN
+    2.1 Secara umum, Anda dapat menggunakan Layanan tanpa memberikan informasi pribadi seperti nama, alamat email, alamat pos, nomor telepon, atau informasi keuangan (semua informasi tersebut tentang keadaan pribadi atau material individu yang teridentifikasi atau dapat diidentifikasi disebut Data Pribadi). Oleh karena itu, jika Anda tidak memberikan Data Pribadi kepada kami secara langsung atau menyetujui penggunaan Data Pribadi tertentu, kami umumnya tidak Menggunakan data Anda kecuali untuk hal berikut:
+    2.1.1 Terkait Situs Web: browser Anda mengirimkan data tertentu agar dapat mengakses Situs Web, yaitu: alamat IP, tanggal dan waktu permintaan, jenis browser, sistem operasi, bahasa, dan versi perangkat lunak browser.
+    2.1.2 Terkait Aplikasi: perangkat seluler Anda mengirimkan data tertentu, yaitu alamat IP Anda, waktu penggunaan Aplikasi, jenis perangkat yang Anda gunakan (misalnya iPhone, iPad), serta peristiwa dalam aplikasi yang direkam dengan analitik Amplitude untuk memungkinkan kami terus meningkatkan Aplikasi.
+    2.1.3 Terkait Aplikasi: dalam beberapa kasus, seperti mengunduh dan memasang uji coba gratis aplikasi berbayar, kami meminta Anda memasukkan alamat email yang valid untuk memulai uji coba gratis.
+    2.1.4 Terkait email: kami menyimpan catatan komunikasi termasuk lampiran dan informasi yang secara sukarela Anda bagikan kepada kami untuk keperluan pemecahan masalah setiap kali Anda berkomunikasi dengan tim dukungan kami.
+    2.1.5 Pesan email yang dikirim oleh kami melalui layanan pihak ketiga seperti MailChimp atau CampaignMonitor, dll., mungkin mengandung piksel pelacakan yang membantu kami mengumpulkan statistik tingkat pengiriman dan pembukaan korespondensi kami. Piksel ini tidak memberikan kami data pribadi tambahan tentang Anda atau perilaku online Anda. Anda dapat menonaktifkan rendering gambar di klien email Anda untuk menonaktifkan fitur ini, tetapi Anda tidak akan dapat melihat gambar dalam email yang diterima.
+Dasar hukum untuk pemrosesan data yang dijelaskan di atas dalam bagian 2.1.1 hingga 2.1.5 (sejauh data tersebut dianggap Data Pribadi) adalah Pasal 6 (1) kalimat 1 lit. f GDPR (kepentingan yang sah; untuk bagian 2.1.1 kepentingan yang sah untuk menggunakan data tersebut berasal dari fakta bahwa tanpa data tersebut, Situs Web tidak dapat diakses oleh pelanggan dan/atau pengguna lainnya; untuk bagian 2.1.2 kepentingan yang sah untuk menggunakan data tersebut adalah bahwa kami memiliki kepentingan untuk terus meningkatkan Aplikasi; untuk bagian 2.1.3 alasan yang sah adalah kami perlu memberi tahu Anda tentang akhir dari uji coba gratis Anda; untuk bagian 2.1.4 alasan yang sah adalah bahwa kami memerlukan informasi tersebut untuk memberikan dukungan yang Anda minta).
+    2.2 Hanya dalam kasus di mana Anda telah memberikan persetujuan sebelumnya, kami juga menggunakan Data Pribadi Anda untuk tujuan lain tetapi hanya sejauh yang diperlukan dalam setiap kasus spesifik. Dasar hukum untuk pemrosesan data yang dijelaskan dalam bagian 2.2 adalah Pasal 6 (1) kalimat 1 lit. a GDPR (persetujuan).
+    2.3 Kami dapat mengungkapkan Data Pribadi kepada pihak ketiga jika pengungkapan tersebut diwajibkan oleh hukum (misalnya, atas permintaan pengadilan atau otoritas penegak hukum). Dasar hukum untuk pemrosesan data yang dijelaskan dalam bagian 2.3 adalah Pasal 6 (1) kalimat 1 lit. c GDPR (kewajiban hukum).
+    2.4 Kami juga dapat menggunakan data tertentu sebagaimana diatur dalam bagian 3 di bawah ini.
+
+    3. KEBIJAKAN COOKIE APLIKASI SET
+    3.1 Situs web Aplikasi SET menggunakan cookie untuk mempersonalisasi pengalaman Anda di situs kami. Cookie memberi tahu kami bagian situs mana yang telah dikunjungi pengguna, membantu kami mengukur kinerja iklan, dan memberi kami wawasan tentang perilaku pengguna sehingga kami dapat meningkatkan komunikasi dan produk kami. Anda dapat menonaktifkan cookie kapan saja di browser web Anda. Berikut cara melakukannya di Google Chrome dan browser Safari:
+    Chrome: Pergi ke Pengaturan di menu Chrome (bilah alat Chrome) -> Gulir ke bawah halaman dan klik Lanjutan -> Di bagian Privasi, klik Pengaturan Konten -> Klik Cookie dan ubah apa saja yang diinginkan.
+    Safari: Pergi ke Preferensi. -> Klik tab Privasi. -> Pilih untuk Memblokir semua cookie.
+    Untuk browser lain, silakan periksa dokumentasi yang disediakan oleh penyedia Anda.
+
+    Cookie aplikasi SET tidak mengumpulkan informasi yang mengidentifikasi Anda secara pribadi. Selain itu, situs lain atau perusahaan tidak akan dapat melacak Anda melalui cookie kami. Jika Anda menonaktifkan cookie, situs web kami tidak dapat lagi memberikan Anda pengalaman pengguna terbaik dan Anda akan kehilangan kesempatan untuk mendapatkan informasi yang lebih dipersonalisasi, seperti menampilkan informasi dalam bahasa Anda atau menampilkan harga dalam mata uang Anda.
+
+    COOKIE: PENGGUNAAN ALAT (PEMBERIAN ANALISIS) LEBIH LANJUT
+    Cookie disimpan di komputer Anda saat menggunakan Situs Web. Cookie adalah file teks kecil yang disimpan di hard disk komputer tempat Anda mengunjungi situs web dan yang dialokasikan ke browser Anda, melalui mana informasi tertentu disampaikan kepada pengguna cookie yang menetapkan cookie (dalam hal ini kami). Cookie berfungsi untuk membuat penawaran situs web lebih ramah pengguna dan efektif secara keseluruhan.
+    Situs Web menggunakan cookie sejauh berikut: Cookie sementara/sesi, Cookie tetap/pengaturan, Cookie analisis.
+    Cookie sementara dihapus secara otomatis ketika Anda menutup browser. Ini termasuk cookie sesi. Cookie ini menyimpan ID sesi, yang mengidentifikasi sesi pengguna di browser. Cookie sesi dihapus saat Anda keluar atau menutup browser Anda.
+    Cookie tetap membantu Situs Web mengingat informasi dan pengaturan Anda saat Anda mengunjungi mereka di masa mendatang. Cookie ini dihapus secara otomatis setelah periode waktu tertentu, yang mungkin berbeda tergantung pada cookie.
+    Kami juga menggunakan cookie di situs web kami yang memungkinkan analisis perilaku pengguna selama berselancar.";

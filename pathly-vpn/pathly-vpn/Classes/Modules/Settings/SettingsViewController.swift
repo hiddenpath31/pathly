@@ -44,7 +44,7 @@ class SettingsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationItem.title = "Settings"
+        self.navigationItem.title = L10n.settings
     }
     
     private func setupUI() {

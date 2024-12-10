@@ -19,7 +19,7 @@ struct ProductDTO {
         var string = ""
         let trial: String = {
             if let trial = product.subscription?.introductoryOffer?.period.value {
-                return "First \(trial) days free, then "
+                return "\(firstString) \(trial) \(thenString) "
             } else {
                 return ""
             }
@@ -48,16 +48,22 @@ struct ProductDTO {
     var description: String?
     
     private var product: Product
+    private var firstString: String
+    private var thenString: String
+    private var daysFreeString: String
     
-    init(product: Product) {
+    init(product: Product, firstLocalizeString: String, thenLocalizeString: String, daysFreeString: String) {
         self.product = product
         self.name = product.displayName
         self.id = product.id
         if let trial = product.subscription?.introductoryOffer?.period.value {
-            self.displayTrial = "First \(trial) days free"
+            self.displayTrial = "\(firstLocalizeString) \(trial) \(daysFreeString)"
         }
         self.description = product.description
         self.localizedPrice = product.displayPrice
+        self.firstString = firstLocalizeString
+        self.thenString = thenLocalizeString
+        self.daysFreeString = daysFreeString
     }
 }
 
@@ -66,6 +72,7 @@ protocol StoreServiceInterface {
     var hasUnlockedPro: Bool { get }
     var didUpdate: Completion? { get set }
     
+    func update(paywall: PaywallLocalize)
     func load(completion: Completion?)
     func pay(productId: String, completion: ((String?) -> Void)?)
 }
@@ -74,7 +81,12 @@ final class StoreService {
     
     var displayProducts: [ProductDTO] {
         return products.map { product in
-            var p = ProductDTO(product: product)
+            var p = ProductDTO(
+                product: product,
+                firstLocalizeString: self.paywall?.firstString ?? "First",
+                thenLocalizeString: self.paywall?.thenString ?? "then", 
+                daysFreeString: self.paywall?.daysFreeString ?? "days free"
+            )
             if product.id == Constants.Subscription.defaultId {
                 p.isSelected = true
             }
@@ -86,8 +98,13 @@ final class StoreService {
     private var products: [Product] = []
     private var productsLoaded = false
     private var updates: Task<Void, Never>? = nil
+    private var paywall: PaywallLocalize?
     
     var didUpdate: Completion?
+    
+    func update(paywall: PaywallLocalize) {
+        self.paywall = paywall
+    }
     
     var purchasedProductIDs = Set<String>() {
         didSet {

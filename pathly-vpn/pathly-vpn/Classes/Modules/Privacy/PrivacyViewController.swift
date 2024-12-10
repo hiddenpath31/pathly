@@ -33,7 +33,7 @@ class PrivacyViewController: UIViewController {
     }
     
     private func setupUI() {
-        self.navigationItem.title = "Privacy Policy"
+        self.navigationItem.title = L10n.Settings.privacyPolicy
         self.view.backgroundColor = Asset.backgroundColor.color
         
         self.view.addSubview(textView)

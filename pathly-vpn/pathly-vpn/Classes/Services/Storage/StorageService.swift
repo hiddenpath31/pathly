@@ -58,10 +58,10 @@ class StorageService {
     }
     var isFunnelShowed: Bool {
         get {
-            return UserDefaults.standard.bool(forKey: "isFunnelShowed")
+            return KeychainWrapper.standard.bool(forKey: "isFunnelShowed") ?? false
         }
         set {
-            UserDefaults.standard.set(newValue, forKey: "isFunnelShowed")
+            KeychainWrapper.standard.set(newValue, forKey: "isFunnelShowed")
         }
     }
     var servers: [Server]?
@@ -83,10 +83,12 @@ class StorageService {
                 let funnelScanFlowDataValue = remoteConfig.configValue(forKey: "scan_flow_\(languageCode)").dataValue
                 let funnelCheckFlowDataValue = remoteConfig.configValue(forKey: "check_flow_\(languageCode)").dataValue
                 let productValue = remoteConfig.configValue(forKey: "product_subscription_\(languageCode)").dataValue
+                let multiPaywallObject = remoteConfig.configValue(forKey: "Paywall_\(languageCode)").dataValue
                 
                 let funnelScanFlow: FunnelModel? = try? decoder.decode(FunnelModel.self, from: funnelScanFlowDataValue)
                 let funnelCheckFlow: FunnelModel? = try? decoder.decode(FunnelModel.self, from: funnelCheckFlowDataValue)
                 let productLocalize: [RemoteSubscription]? = try? decoder.decode([RemoteSubscription].self, from: productValue)
+                let paywall: PaywallLocalize? = try? decoder.decode(PaywallLocalize.self, from: multiPaywallObject)
                 
                 let remoteResponse = RemoteResponse(
                     appkey1: key1,
@@ -94,7 +96,8 @@ class StorageService {
                     dismissDelay: Int(truncating: dismissDelay),
                     scanFlow: funnelScanFlow,
                     checkFlow: funnelCheckFlow,
-                    productLocalize: productLocalize
+                    productLocalize: productLocalize,
+                    paywall: paywall
                 )
 
                 self.remoteRespone = remoteResponse

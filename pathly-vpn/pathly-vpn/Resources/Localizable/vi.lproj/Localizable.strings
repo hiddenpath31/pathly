@@ -1,0 +1,68 @@
+"Error" = "Lỗi";
+"Continue" = "Tiếp tục";
+
+"Onboard.Protect.Title" = "Bảo vệ kết nối của bạn";
+"Onboard.Protect.Description" = "Chạm để kích hoạt VPN và ngay lập tức bảo vệ dữ liệu của bạn chỉ với một bước đơn giản";
+
+"Onboard.Location.Title" = "Chọn vị trí của bạn";
+"Onboard.Location.Description" = "Chọn một quốc gia để kết nối với VPN và bắt đầu thưởng thức việc xem video an toàn";
+
+"Onboard.IP.Title" = "Kiểm tra dữ liệu IP của bạn";
+"Onboard.IP.Description" = "Xem chi tiết IP và đảm bảo kết nối an toàn chỉ với một hành động đơn giản";
+
+"VPN.Disconnect" = "Ngắt kết nối";
+"VPN.Fail" = "Thất bại";
+"VPN.Connecting" = "Đang kết nối";
+"VPN.Connected" = "Đã kết nối";
+"VPN.UnableToSaveVPNProfile" = "Không thể lưu hồ sơ VPN";
+"VPN.UnableToLoadProfile" = "Không thể tải hồ sơ";
+"VPN.CantConnect" = "Không thể kết nối";
+"VPN.StreamingServer" = "Máy chủ phát trực tuyến";
+"VPN.SelectServer" = "Chọn máy chủ";
+
+"Locations.Location" = "Vị trí";
+"Locations.SearchLocations" = "Tìm kiếm vị trí";
+
+"Tab.Data" = "Dữ liệu";
+"Tab.VPN" = "VPN";
+"Tab.Settings" = "Cài đặt";
+
+"Data.IPAddress" = "Địa chỉ IP";
+"Data.Location" = "Vị trí";
+"Data.PostalCode" = "Mã bưu chính";
+"Data.CountryCode" = "Mã quốc gia";
+"Data.CheckIPData" = "Kiểm tra dữ liệu IP";
+"Data.IPData" = "Dữ liệu IP";
+
+"Settings" = "Cài đặt";
+"Settings.PrivacyPolicy" = "Chính sách bảo mật";
+"Settings.ManageSubscription" = "Quản lý đăng ký";
+"Settings.RestorePurchases" = "Khôi phục giao dịch mua";
+"Settings.HelpSupport" = "Trợ giúp & Hỗ trợ";
+"Settings.TermsOfService" = "Điều khoản dịch vụ";
+
+"PrivacyPolicy" = "
+    SET LLC Chính sách bảo mật này sẽ áp dụng cho các ứng dụng được phát hành trên Apple App Store bởi LLC «SET» và có thể truy cập từ các thiết bị di động và máy tính cá nhân (ứng dụng), và việc sử dụng các trang web do LLC «SET» kiểm soát nói chung (Ứng dụng Website, và Website cùng với các Dịch vụ).
+
+    c1. CHUNG về các Dịch vụ: LLC «SET» (SET, chúng tôi, chúng ta hoặc của chúng tôi) là Người kiểm soát Dữ liệu theo nghĩa của Quy định về bảo vệ dữ liệu chung (GDPR). Chính sách bảo mật này sẽ thông báo cho bạn về cách chúng tôi thu thập, xử lý và sử dụng (Sử dụng) dữ liệu cá nhân liên quan đến các Dịch vụ.
+
+    2. DỮ LIỆU CHÚNG TÔI THU THẬP, XỬ LÝ VÀ SỬ DỤNG
+    2.1 Nói chung, bạn có thể sử dụng các Dịch vụ mà không cần cung cấp thông tin cá nhân như tên, địa chỉ email, địa chỉ bưu điện, số điện thoại, thông tin tài chính (tất cả những thông tin liên quan đến hoàn cảnh cá nhân hoặc vật chất của một cá nhân được xác định hoặc có thể nhận dạng được gọi là Dữ liệu Cá nhân). Do đó, nếu bạn không cung cấp cho chúng tôi dữ liệu cá nhân theo cách khác hoặc không đồng ý cho chúng tôi sử dụng một số Dữ liệu Cá nhân nhất định, chúng tôi nói chung sẽ không sử dụng dữ liệu của bạn ngoại trừ các trường hợp sau:
+    2.1.1 Liên quan đến Website: trình duyệt của bạn sẽ truyền tải một số dữ liệu để có thể truy cập vào Website, bao gồm: địa chỉ IP, ngày và giờ yêu cầu, loại trình duyệt, hệ điều hành, ngôn ngữ và phiên bản phần mềm trình duyệt.
+    2.1.2 Liên quan đến Ứng dụng: một số dữ liệu được thiết bị di động của bạn truyền tải: bao gồm địa chỉ IP, khoảng thời gian bạn sử dụng Ứng dụng và loại thiết bị bạn sử dụng (ví dụ: IPhone, IPad), cũng như các sự kiện trong ứng dụng được ghi lại với công cụ phân tích Amplitude để giúp chúng tôi cải tiến liên tục Ứng dụng.
+    2.1.3 Liên quan đến Ứng dụng: trong một số trường hợp, như khi tải xuống và cài đặt phiên bản dùng thử miễn phí của một Ứng dụng trả phí, chúng tôi yêu cầu bạn nhập địa chỉ email hợp lệ để bắt đầu thử nghiệm miễn phí.
+    2.1.4 Liên quan đến email: chúng tôi lưu trữ bản ghi của các cuộc trao đổi, bao gồm các tệp đính kèm và thông tin mà bạn tự nguyện chia sẻ với chúng tôi cho mục đích hỗ trợ khi bạn liên hệ với đội ngũ hỗ trợ của chúng tôi.
+    2.1.5 Các email mà chúng tôi gửi qua các dịch vụ bên thứ ba như MailChimp hoặc CampaignMonitor, v.v. có thể chứa pixel theo dõi giúp chúng tôi thu thập thống kê về tỷ lệ gửi và mở thư của chúng tôi. Những pixel này không cung cấp cho chúng tôi thêm bất kỳ dữ liệu cá nhân nào về bạn hoặc hành vi trực tuyến của bạn. Bạn có thể vô hiệu hóa việc hiển thị hình ảnh trong ứng dụng email của mình, điều này sẽ vô hiệu hóa tính năng này, tuy nhiên bạn sẽ không thể xem bất kỳ hình ảnh nào trong các email khác mà bạn nhận được. Cơ sở pháp lý để xử lý dữ liệu mô tả ở trên từ mục 2.1.1 đến 2.1.5 (nếu dữ liệu đó được coi là Dữ liệu Cá nhân) là Điều 6 (1) câu 1 lit. f GDPR (lợi ích hợp pháp; đối với mục 2.1.1, lợi ích hợp pháp trong việc sử dụng dữ liệu này là Website không thể được truy cập bởi khách hàng và/hoặc người dùng khác của chúng tôi nếu không có dữ liệu này; đối với mục 2.1.2, lợi ích hợp pháp trong việc sử dụng dữ liệu này là chúng tôi có lợi ích trong việc cải tiến liên tục Ứng dụng; đối với mục 2.1.3, lý do hợp pháp là chúng tôi cần thông báo cho bạn về việc kết thúc thử nghiệm miễn phí của bạn; đối với mục 2.1.4, lý do hợp pháp là chúng tôi cần thông tin để cung cấp hỗ trợ mà bạn yêu cầu).
+    2.2 Chỉ trong những trường hợp bạn đã đồng ý trước, chúng tôi cũng sử dụng Dữ liệu Cá nhân của bạn cho các mục đích khác nhưng chỉ trong phạm vi cần thiết cho mỗi trường hợp cụ thể. Cơ sở pháp lý cho việc xử lý dữ liệu mô tả trong mục 2.2 này là Điều 6 (1) câu 1 lit. a GDPR (đồng ý).
+    2.3 Chúng tôi có thể tiết lộ Dữ liệu Cá nhân cho bên thứ ba khi việc tiết lộ này là yêu cầu của pháp luật (ví dụ, khi có yêu cầu từ tòa án hoặc cơ quan thực thi pháp luật). Cơ sở pháp lý cho việc xử lý dữ liệu mô tả trong mục 2.3 này là Điều 6 (1) câu 1 lit. c GDPR (nghĩa vụ pháp lý).
+    2.4 Chúng tôi cũng có thể sử dụng một số dữ liệu như đã nêu trong mục 3 dưới đây.
+
+    3. CHÍNH SÁCH COOKIES CỦA ỨNG DỤNG SET
+    3.1 Các trang web của SET Apps sử dụng cookies để cá nhân hóa trải nghiệm của bạn trên các trang web của chúng tôi. Cookies cho chúng tôi biết những phần nào của trang web mà người dùng đã truy cập, giúp chúng tôi đo lường hiệu quả của quảng cáo và cung cấp cho chúng tôi cái nhìn về hành vi người dùng để chúng tôi có thể cải tiến các sản phẩm và giao tiếp. Bạn có thể vô hiệu hóa cookies bất cứ lúc nào trong trình duyệt web của mình. Dưới đây là cách thực hiện trong các trình duyệt Google Chrome và Safari: Chrome: Vào Cài đặt trong menu Chrome (thanh công cụ Chrome) -> Cuộn xuống và nhấp vào Nâng cao -> Trong phần Quyền riêng tư, nhấp vào Cài đặt nội dung -> Nhấp vào Cookies và thay đổi theo ý muốn. Safari: Vào Sở thích. -> Nhấp vào tab Quyền riêng tư. -> Chọn Chặn tất cả cookies. Đối với các trình duyệt khác, vui lòng kiểm tra tài liệu mà nhà cung cấp của bạn cung cấp.
+
+    Cookies của SET Apps không thu thập thông tin có thể nhận dạng cá nhân bạn. Ngoài ra, các trang web hoặc công ty khác sẽ không thể theo dõi bạn qua cookies của chúng tôi. Khi bạn vô hiệu hóa cookies, trang web của chúng tôi sẽ không còn cung cấp cho bạn trải nghiệm người dùng tốt nhất và bạn sẽ bỏ lỡ cơ hội nhận được thông tin cá nhân hóa hơn, chẳng hạn như hiển thị thông tin bằng ngôn ngữ của bạn hoặc hiển thị giá cả bằng tiền tệ của bạn.
+
+    COOKIES: SỬ DỤNG CÔNG CỤ PHÂN TÍCH THÊM
+    Cookies được lưu trữ trên máy tính của bạn khi sử dụng Website. Cookies là các tệp văn bản nhỏ được lưu trên ổ cứng của máy tính mà bạn sử dụng để truy cập vào website và được gán cho trình duyệt của bạn và thông qua đó một số thông tin được gửi đến người sử dụng cookies (trong trường hợp này là chúng tôi). Cookies giúp làm cho việc cung cấp website trở nên thân thiện và hiệu quả hơn tổng thể. Website sử dụng cookies với các mức độ sau: Cookies tạm thời / Phiên, Cookies lâu dài / Cài đặt, Cookies phân tích. Cookies tạm thời sẽ tự động bị xóa khi bạn đóng trình duyệt. Điều này đặc biệt bao gồm cookies phiên. Những cookies này lưu trữ một ID phiên, giúp nhận dạng phiên người dùng trong trình duyệt. Cookies phiên sẽ bị xóa khi bạn đăng xuất hoặc đóng trình duyệt. Cookies lâu dài giúp Website nhớ thông tin và cài đặt của bạn khi bạn truy cập lại trong tương lai. Chúng sẽ tự động bị xóa sau một khoảng thời gian xác định, có thể khác nhau tùy theo từng cookie. Chúng tôi cũng sử dụng cookies trên trang web của mình giúp phân tích hành vi duyệt web của người dùng.
+    3.2 Website sử dụng Google Analytics, một dịch vụ phân tích web do Google, Inc. (Google) cung cấp. Google Analytics sử dụng cookies, là các tệp văn bản được đặt trên máy tính của bạn, giúp phân tích cách bạn sử dụng Website. Thông tin được tạo ra bởi cookie về việc bạn sử dụng Website sẽ thường xuyên được chuyển đến và lưu trữ bởi Google trên các máy chủ tại Hoa Kỳ.
+    Vì tính năng ẩn IP được kích hoạt trên Website, địa chỉ IP của bạn sẽ bị rút gọn trong khu vực các quốc gia thành viên Liên minh Châu Âu hoặc trong các quốc gia ký kết Hiệp định Kinh tế Châu Âu. Chỉ trong những trường hợp đặc biệt, địa chỉ IP đầy đủ sẽ được chuyển đến một máy chủ của Google tại Hoa Kỳ và bị rút gọn ở đó. Google sẽ sử dụng thông tin này thay mặt SET Apps để đánh giá việc sử dụng Website của bạn, tổng hợp các báo cáo về hoạt động Website và cung cấp các dịch vụ khác liên quan đến hoạt động của website và việc sử dụng internet. Địa chỉ IP mà trình duyệt của bạn gửi trong khuôn khổ Google Analytics sẽ không được kết nối với bất kỳ dữ liệu nào khác mà Google lưu trữ. Bạn có thể từ chối việc sử dụng cookies bằng cách chọn cài đặt thích hợp trong trình duyệt của mình.";

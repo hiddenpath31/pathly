@@ -1,0 +1,67 @@
+"Error" = "Errore";
+"Continue" = "Continua";
+
+"Onboard.Protect.Title" = "Proteggi la tua connessione";
+"Onboard.Protect.Description" = "Tocca per attivare la VPN e proteggere istantaneamente i tuoi dati con un solo semplice passaggio";
+
+"Onboard.Location.Title" = "Scegli la tua posizione";
+"Onboard.Location.Description" = "Seleziona un paese per connetterti alla VPN e inizia a goderti lo streaming sicuro";
+
+"Onboard.IP.Title" = "Controlla i tuoi dati IP";
+"Onboard.IP.Description" = "Visualizza i dettagli dell'IP e assicurati che la connessione sia sicura con un'azione semplice";
+
+"VPN.Disconnect" = "Disconnetti";
+"VPN.Fail" = "Errore";
+"VPN.Connecting" = "Connessione in corso";
+"VPN.Connected" = "Connesso";
+"VPN.UnableToSaveVPNProfile" = "Impossibile salvare il profilo VPN";
+"VPN.UnableToLoadProfile" = "Impossibile caricare il profilo";
+"VPN.CantConnect" = "Impossibile connettersi";
+"VPN.StreamingServer" = "Server di streaming";
+"VPN.SelectServer" = "Seleziona server";
+
+"Locations.Location" = "Posizione";
+"Locations.SearchLocations" = "Cerca posizioni";
+
+"Tab.Data" = "Dati";
+"Tab.VPN" = "VPN";
+"Tab.Settings" = "Impostazioni";
+
+"Data.IPAddress" = "Indirizzo IP";
+"Data.Location" = "Posizione";
+"Data.PostalCode" = "Codice postale";
+"Data.CountryCode" = "Codice paese";
+"Data.CheckIPData" = "Controlla i dati IP";
+"Data.IPData" = "Dati IP";
+
+"Settings" = "Impostazioni";
+"Settings.PrivacyPolicy" = "Politica sulla privacy";
+"Settings.ManageSubscription" = "Gestisci abbonamento";
+"Settings.RestorePurchases" = "Ripristina acquisti";
+"Settings.HelpSupport" = "Aiuto & Supporto";
+"Settings.TermsOfService" = "Termini di servizio";
+"PrivacyPolicy" = "
+    SET LLC Questa Informativa sulla privacy si applica alle applicazioni pubblicate sull'Apple App Store da LLC «SET» e accessibili da dispositivi mobili e computer personali (l'App), nonché all'utilizzo dei siti web controllati da LLC «SET» in generale (il Sito Web). L'App e il Sito Web insieme costituiscono i Servizi.
+
+    1. GENERALE
+    Per quanto riguarda i Servizi: LLC «SET» (SET, noi, nostro) è il Titolare del trattamento ai sensi del Regolamento generale sulla protezione dei dati (GDPR).
+    Questa informativa sulla privacy informa su come raccogliamo, elaboriamo e utilizziamo (Usiamo) i dati personali in relazione ai Servizi.
+
+    2. DATI CHE RACCOGLIAMO, ELABORIAMO E UTILIZZIAMO
+    2.1 In generale, puoi utilizzare i Servizi senza fornire informazioni personali come, ad esempio, il tuo nome, indirizzo email, indirizzo postale, numero di telefono, informazioni finanziarie (tutte queste informazioni che riguardano le circostanze personali o materiali di un soggetto identificato o identificabile sono insieme Dati personali). Pertanto, se non ci fornisci direttamente i Dati personali in un altro modo o non acconsenti attivamente al loro utilizzo da parte nostra, in generale non utilizziamo i tuoi dati, con l'eccezione delle seguenti situazioni:
+    2.1.1 Per quanto riguarda il Sito Web: il tuo browser trasmette determinati dati necessari per accedere al Sito Web, vale a dire: l'indirizzo IP, la data e l'ora della richiesta, il tipo di browser, il sistema operativo, la lingua e la versione del software del browser.
+    2.1.2 Per quanto riguarda l'App: alcuni dati vengono trasmessi dal tuo dispositivo mobile: nello specifico il tuo indirizzo IP, i periodi di utilizzo dell'App e il tipo di dispositivo che utilizzi (es. iPhone, iPad), nonché eventi all'interno dell'applicazione registrati con le analisi di Amplitude per consentirci di migliorare continuamente l'App.
+    2.1.3 Per quanto riguarda l'App: in determinati casi, come il download e l'installazione di una prova gratuita di un'App a pagamento, ti chiediamo di inserire un indirizzo email valido per iniziare la tua prova gratuita.
+    2.1.4 Per quanto riguarda l'email: conserviamo una registrazione della comunicazione, inclusi allegati e informazioni che decidi volontariamente di condividere con noi per scopi di risoluzione dei problemi ogni volta che comunichi con il nostro team di supporto.
+    2.1.5 I messaggi email inviati da noi tramite servizi di terze parti come MailChimp o CampaignMonitor, ecc., possono contenere un pixel di tracciamento che ci aiuta a raccogliere statistiche sulle percentuali di consegna e apertura della nostra corrispondenza. Questi pixel non ci forniscono dati personali aggiuntivi su di te o sul tuo comportamento online. Puoi disabilitare il rendering delle immagini nel tuo client email per disattivare questa funzione; tuttavia, non sarai in grado di vedere le immagini all'interno di altre email ricevute.
+    La base giuridica per il trattamento dei dati descritti sopra nelle sezioni 2.1.1 fino a 2.1.5 (nella misura in cui tali dati devono essere considerati Dati personali) è l'Art. 6 (1) frase 1 lit. f GDPR (interessi legittimi; per quanto riguarda la sezione 2.1.1, gli interessi legittimi derivano dal fatto che senza tali dati il Sito Web non può essere accessibile dai nostri clienti e/o altri utenti; per quanto riguarda la sezione 2.1.2, l'interesse legittimo è il miglioramento continuo dell'App; per quanto riguarda la sezione 2.1.3, la ragione legittima è informarti sulla fine del periodo di prova gratuita; per quanto riguarda la sezione 2.1.4, la ragione legittima è fornire il supporto richiesto).
+    2.2 Solo nei casi in cui ci hai dato un consenso preventivo utilizziamo anche i tuoi Dati personali per altri scopi, ma solo nella misura necessaria in ogni caso specifico. La base giuridica per il trattamento dei dati descritti in questa sezione 2.2 è l'Art. 6 (1) frase 1 lit. a GDPR (consenso).
+    2.3 Possiamo divulgare i Dati personali a terze parti quando tale divulgazione è richiesta dalla legge (ad esempio, su richiesta di un tribunale o delle autorità giudiziarie). La base giuridica per il trattamento dei dati descritti in questa sezione 2.3 è l'Art. 6 (1) frase 1 lit. c GDPR (obbligo legale).
+    2.4 Possiamo inoltre utilizzare determinati dati come indicato nella sezione 3 seguente.
+
+    3. COOKIE E ANALISI
+    3.1 I siti web di SET Apps utilizzano i cookie per personalizzare la tua esperienza sui nostri siti. I cookie ci dicono quali parti dei nostri siti web sono state visitate, ci aiutano a misurare le prestazioni degli annunci pubblicitari e ci forniscono informazioni sul comportamento degli utenti per migliorare i nostri prodotti e comunicazioni. Puoi disabilitare i cookie in qualsiasi momento nel tuo browser.
+    3.2 Il sito web utilizza Google Analytics, un servizio di analisi web fornito da Google, Inc. (Google). Google Analytics utilizza i cookie per analizzare come utilizzi il sito web. Puoi disabilitare Google Analytics scaricando e installando l'estensione dal link: https://tools.google.com/dlpage/gaoptout?hl=it.
+    3.3 Le nostre app utilizzano Facebook SDK per analizzare le fonti delle installazioni delle app e migliorare i servizi offerti.
+    ";
+

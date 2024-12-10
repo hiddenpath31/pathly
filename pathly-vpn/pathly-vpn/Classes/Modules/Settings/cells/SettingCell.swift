@@ -28,13 +28,13 @@ enum SettingItem: CaseIterable {
     var title: String {
         switch self {
             case .subscription:
-                return "Manage Subscription"
+                return L10n.Settings.manageSubscription
             case .support:
-                return "Help & Support"
+                return L10n.Settings.helpSupport
             case .privacy:
-                return "Privacy Policy"
+                return L10n.Settings.privacyPolicy
             case .terms:
-                return "Terms of Service"
+                return L10n.Settings.termsOfService
         }
     }
 }

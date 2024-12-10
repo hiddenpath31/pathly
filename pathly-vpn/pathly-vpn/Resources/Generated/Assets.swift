@@ -24,6 +24,23 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
+  internal static let green = ColorAsset(name: "green")
+  internal static let red = ColorAsset(name: "red")
+  internal static let subtitle = ColorAsset(name: "subtitle")
+  internal static let funelScanningHighrisk = ImageAsset(name: "funel-scanning-highrisk")
+  internal static let funnelAttention = ImageAsset(name: "funnel-attention")
+  internal static let funnelBug = ImageAsset(name: "funnel-bug")
+  internal static let funnelCheckError = ImageAsset(name: "funnel-check-error")
+  internal static let funnelCheckSuccess = ImageAsset(name: "funnel-check-success")
+  internal static let funnelCheckWarning = ImageAsset(name: "funnel-check-warning")
+  internal static let funnelEye = ImageAsset(name: "funnel-eye")
+  internal static let funnelGradientButton = ImageAsset(name: "funnel-gradient-button")
+  internal static let funnelLoader = ImageAsset(name: "funnel-loader")
+  internal static let funnelScanningAge18 = ImageAsset(name: "funnel-scanning-age18")
+  internal static let funnelScanningEye = ImageAsset(name: "funnel-scanning-eye")
+  internal static let funnelScanningStop = ImageAsset(name: "funnel-scanning-stop")
+  internal static let funnelStartScaning = ImageAsset(name: "funnel-start-scaning")
+  internal static let funnelWarningDevice = ImageAsset(name: "funnel-warning-device")
   internal static let accentColor = ColorAsset(name: "AccentColor")
   internal static let backgroundColor = ColorAsset(name: "backgroundColor")
   internal static let gray = ColorAsset(name: "gray")

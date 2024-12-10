@@ -7,29 +7,39 @@
 
 import UIKit
 
-enum SinglePaywallItem: CaseIterable {
-    case secure
-    case protection
-    case ip
-    
+enum SinglePaywallItem {
+    case secure(string: String)
+    case protection(string: String)
+    case verification(string: String)
+
     var icon: UIImage? {
         switch self {
-        case .secure:
-            return Asset.paywallSecure.image
-        case .protection:
-            return Asset.paywallProtection.image
-        case .ip:
-            return Asset.paywallIp.image
+            case .secure:
+                return Asset.paywallSecure.image
+            case .protection:
+                return Asset.paywallProtection.image
+            case .verification:
+                return Asset.paywallIp.image
         }
     }
     var title: String {
         switch self {
+        case .secure(let string):
+            return string
+        case .protection(let string):
+            return string
+        case .verification(let string):
+            return string
+        }
+    }
+    func toString(object: PaywallLocalize) -> String {
+        switch self {
         case .secure:
-            return "VPN Secure"
+            return object.secureString
         case .protection:
-            return "The Strongest Protection"
-        case .ip:
-            return "IP Verifications"
+            return object.protectionString
+        case .verification:
+            return object.verificationString
         }
     }
 }
@@ -95,7 +105,7 @@ class SinglePaywallViewController: CommonPaywallViewController {
     
     private func setupUI() {
         let vStack = ViewFactory.stack(.vertical, spacing: 35)
-        let items = SinglePaywallItem.allCases
+        let items: [SinglePaywallItem] = self.presenter?.items ?? []
         items.forEach { item in
             let view = SinglePaywallView()
             view.configure(item: item)

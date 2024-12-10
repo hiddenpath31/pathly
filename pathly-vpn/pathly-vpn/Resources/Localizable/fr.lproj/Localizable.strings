@@ -1,0 +1,89 @@
+"Error" = "Erreur";
+"Continue" = "Continuer";
+
+"Onboard.Protect.Title" = "Protégez Votre Connexion";
+"Onboard.Protect.Description" = "Appuyez pour activer le VPN et protégez instantanément vos données en une simple étape";
+
+"Onboard.Location.Title" = "Choisissez Votre Localisation";
+"Onboard.Location.Description" = "Sélectionnez un pays pour vous connecter au VPN et commencer à profiter du streaming sécurisé";
+
+"Onboard.IP.Title" = "Vérifiez Vos Données IP";
+"Onboard.IP.Description" = "Consultez les détails de l'IP et assurez-vous que la connexion est sécurisée en une seule action";
+
+"VPN.Disconnect" = "Déconnecter";
+"VPN.Fail" = "Échec";
+"VPN.Connecting" = "Connexion";
+"VPN.Connected" = "Connecté";
+"VPN.UnableToSaveVPNProfile" = "Impossible de sauvegarder le profil VPN";
+"VPN.UnableToLoadProfile" = "Impossible de charger le profil";
+"VPN.CantConnect" = "Impossible de se connecter";
+"VPN.StreamingServer" = "Serveur de streaming";
+"VPN.SelectServer" = "Sélectionner un serveur";
+
+"Locations.Location" = "Localisation";
+"Locations.SearchLocations" = "Rechercher des localisations";
+
+"Tab.Data" = "Données";
+"Tab.VPN" = "VPN";
+"Tab.Settings" = "Paramètres";
+
+"Data.IPAddress" = "Adresse IP";
+"Data.Location" = "Localisation";
+"Data.PostalCode" = "Code Postal";
+"Data.CountryCode" = "Code Pays";
+"Data.CheckIPData" = "Vérifier les Données IP";
+"Data.IPData" = "Données IP";
+
+"Settings" = "Paramètres";
+"Settings.PrivacyPolicy" = "Politique de Confidentialité";
+"Settings.ManageSubscription" = "Gérer l'abonnement";
+"Settings.RestorePurchases" = "Restaurer les Achats";
+"Settings.HelpSupport" = "Aide & Support";
+"Settings.TermsOfService" = "Conditions d'Utilisation";
+
+"PrivacyPolicy" = "
+    SET LLC Cette politique de confidentialité s'applique aux applications publiées sur l'App Store par la société SET LLC, accessibles depuis les appareils mobiles et les ordinateurs personnels (l'App), et l'utilisation des sites web contrôlés par SET LLC en général (l'App, et le site web ensemble les Services).
+
+    c1. GÉNÉRALITES concernant les Services : SET LLC (SET, nous, notre) est le Responsable du Traitement des Données au sens du Règlement Général sur la Protection des Données (RGPD).
+    Cette politique de confidentialité vous informe sur la manière dont nous collectons, traitons et utilisons (Utilisation) les données personnelles en lien avec les Services.
+
+    2. DONNÉES QUE NOUS COLLECTONS, TRAITONS ET UTILISONS
+    2.1 En général, vous pouvez utiliser les Services sans fournir d'informations personnelles telles que votre nom, adresse e-mail, adresse postale, numéro de téléphone, informations financières (telles que définies par la législation applicable, les données personnelles). Ainsi, si vous ne nous fournissez pas directement des données personnelles ou si vous ne consentez pas activement à leur Utilisation par nos soins, nous ne traiterons généralement pas vos données à l'exception des cas suivants :
+    2.1.1 Concernant le site Web : votre navigateur transmet certaines données pour que le site soit accessible, à savoir : l'adresse IP, la date et l'heure de la demande, le type de navigateur, le système d'exploitation, la langue et la version du logiciel du navigateur.
+    2.1.2 Concernant l'App : certaines données sont transmises par votre appareil mobile, à savoir votre adresse IP, les périodes pendant lesquelles vous utilisez l'App et le type d'appareil que vous utilisez (par exemple, iPhone, iPad), ainsi que des événements au sein de l'application enregistrés via Amplitude Analytics pour nous permettre d'améliorer l'App.
+    2.1.3 Concernant l'App : dans certains cas, comme le téléchargement et l'installation d'un essai gratuit d'une application payante, nous vous demandons de saisir une adresse e-mail valide pour commencer votre essai gratuit.
+    2.1.4 Concernant l'e-mail : nous conservons un enregistrement de la communication, y compris les pièces jointes et les informations que vous choisissez de partager avec nous à des fins de dépannage lorsque vous communiquez avec notre équipe de support.
+    2.1.5 Les messages envoyés par nos soins via des services tiers comme MailChimp ou CampaignMonitor, etc., peuvent contenir des pixels de suivi, ce qui nous permet de collecter des statistiques sur les taux de livraison et d'ouverture de notre correspondance. Ces pixels ne nous fournissent aucune donnée personnelle supplémentaire à votre sujet ou sur votre comportement en ligne. Vous pouvez désactiver le rendu des images dans votre client de messagerie pour désactiver cette fonctionnalité, mais vous ne pourrez pas voir les images dans les autres e-mails reçus. La base légale pour le traitement des données décrites ci-dessus dans les sections 2.1.1 à 2.1.5 (dans la mesure où ces données sont considérées comme des données personnelles) est l'article 6 (1) phrase 1 lit. f du RGPD (intérêts légitimes ; concernant la section 2.1.1, l'intérêt légitime de traiter ces données découle du fait que sans ces données, le site Web ne peut pas être accessible à nos clients et/ou utilisateurs ; concernant la section 2.1.2, l'intérêt légitime de traiter ces données est que nous avons un intérêt à améliorer continuellement l'App ; concernant la section 2.1.3, l'intérêt légitime est que nous devons vous informer de la fin de votre essai gratuit ; concernant la section 2.1.4, l'intérêt légitime est que nous avons besoin des informations pour vous fournir l'assistance que vous avez demandée).
+    2.2 Seulement dans les cas où vous nous avez donné votre consentement préalable, nous utilisons vos données personnelles à d'autres fins, mais seulement dans la mesure nécessaire dans chaque cas spécifique. La base légale pour le traitement des données décrites dans cette section 2.2 est l'article 6 (1) phrase 1 lit. a du RGPD (consentement).
+    2.3 Nous pouvons divulguer des données personnelles à des tiers lorsque cette divulgation est requise par la loi (par exemple, à la demande d'un tribunal ou des autorités chargées de l'application de la loi). La base légale pour le traitement des données décrites dans cette section 2.3 est l'article 6 (1) phrase 1 lit. c du RGPD (obligation légale).
+    2.4 Nous pouvons également utiliser certaines données comme décrit dans la section 3 ci-dessous.
+
+    3. POLITIQUE DES COOKIES DES APPLICATIONS SET
+    3.1 Les sites web des applications SET utilisent des cookies pour personnaliser votre expérience sur nos sites. Les cookies nous indiquent quelles parties de nos sites web les gens ont visitées, nous aident à mesurer les performances des publicités et nous donnent des informations sur le comportement des utilisateurs afin que nous puissions améliorer nos communications et nos produits. Vous pouvez désactiver les cookies à tout moment dans votre navigateur web. Voici comment cela fonctionne dans les navigateurs Google Chrome et Safari : Chrome : allez dans les Paramètres du menu Chrome -> faites défiler la page et cliquez sur Paramètres avancés -> dans la section Confidentialité, cliquez sur Paramètres de contenu -> cliquez sur Cookies et modifiez tout ce que vous souhaitez. Safari : allez dans Préférences -> cliquez sur l'onglet Confidentialité -> choisissez de bloquer tous les cookies. Pour d'autres navigateurs, veuillez consulter la documentation fournie par votre fournisseur.
+
+    Les cookies des applications SET ne collectent pas d'informations qui vous identifient personnellement. De plus, d'autres sites ou entreprises ne pourront pas vous suivre grâce à nos cookies. Lorsque vous désactivez les cookies, notre site web ne peut plus vous offrir la meilleure expérience utilisateur et vous perdez la possibilité d'obtenir des informations plus personnalisées, telles que l'affichage d'informations dans votre langue ou l'affichage des prix dans votre devise.
+
+    COOKIES : UTILISATION D'OUTILS D'ANALYSE
+    Les cookies sont stockés sur votre ordinateur lorsque vous utilisez le site Web. Les cookies sont de petits fichiers texte stockés sur le disque dur de votre ordinateur que vous utilisez pour visiter un site web et qui sont attribués à votre navigateur, et par lesquels certaines informations sont transmises au site web qui configure le cookie (dans ce cas, nous). Les cookies servent à rendre l'offre du site plus conviviale et plus efficace dans son ensemble. Le site utilise des cookies dans la mesure suivante : cookies transitoires / de session, cookies persistants / de paramétrage, cookies d'analyse. Les cookies transitoires sont automatiquement supprimés lorsque vous fermez votre navigateur. Cela inclut en particulier les cookies de session. Ceux-ci stockent un identifiant de session, permettant d'identifier la session de l'utilisateur dans le navigateur. Les cookies de session sont supprimés lorsque vous vous déconnectez ou fermez votre navigateur. Les cookies persistants aident le site à se souvenir de vos informations et paramètres lorsque vous le visitez à nouveau à l'avenir. Ils sont supprimés automatiquement après une période spécifiée, qui peut varier en fonction du cookie. Nous utilisons également des cookies sur notre site pour analyser le comportement de navigation des utilisateurs.
+
+    3.2 Le site utilise Google Analytics, un service d'analyse web fourni par Google, Inc. (Google). Google Analytics utilise des cookies, qui sont des fichiers texte placés sur votre ordinateur, pour aider à analyser comment vous utilisez le site. Les informations générées par le cookie concernant votre utilisation du site web seront généralement transmises à Google et stockées sur des serveurs aux États-Unis.
+    Parce que l'anonymisation de l'adresse IP est activée sur le site, votre adresse IP sera tronquée dans les pays de l'Union européenne ou dans d'autres pays contractants de l'Espace économique européen. Dans de rares cas, l'intégralité de l'adresse IP sera d'abord transmise à un serveur Google aux États-Unis et y sera tronquée. Google utilisera cette information pour le compte de SET Apps afin d'évaluer votre utilisation du site, compiler des rapports sur l'activité du site et fournir d'autres services liés à l'activité du site et à l'utilisation d'Internet. L'adresse IP que votre navigateur transmet dans le cadre de Google Analytics ne sera pas associée à d'autres données détenues par Google.
+
+    3.3 Nos applications utilisent le SDK Facebook de Facebook 1 Hacker Way, Menlo Park (,) pour analyser les sources d'installation de l'application et comment vous utilisez l'application. Le SDK Facebook et Analytics est un service qui nous aide à améliorer nos services en comprenant mieux les schémas d'utilisation générale de l'application.
+
+    3.4 Si vous décidez de désactiver (certaines des) cookies et outils décrits ci-dessus, veuillez noter que certaines fonctionnalités et fonctionnalités des services pourraient ne pas fonctionner ou être accessibles pour vous.
+
+    3.5 La base légale pour le traitement des données décrites dans cette section 3 (dans la mesure où ces données sont considérées comme des données personnelles) est l'article 6 (1) phrase 1 lit. f du RGPD (intérêts légitimes ; l'intérêt légitime de traiter ces données est que nous utilisons et analysons les données respectives pour améliorer nos services, par exemple en obtenant une meilleure compréhension de vos intérêts et besoins concernant nos services et pour aider à personnaliser votre expérience utilisateur).
+
+    4. MISE EN ŒUVRE TECHNIQUE DES SERVICES PAR DES SOUS-TRAITANTS
+
+    Nous utilisons en partie des prestataires de services qui traitent des données personnelles en notre nom pour exploiter la plateforme technique des services. Ces prestataires de services traitent les données exclusivement selon nos instructions (traitement de commande). La base légale pour le traitement des données décrites dans cette section 4 est l'article 6 (1) phrase 1 lit. b du RGPD (exécution du contrat et mesures précontractuelles) et l'article 28 du RGPD (traitement de commande).
+
+    5. DURÉE DE CONSERVATION DES DONNÉES PERSONNELLES
+
+    À moins qu'aucun délai de conservation plus court ne soit indiqué dans cette politique de confidentialité, en général, nous conservons les données personnelles aussi longtemps que nécessaire (i) pour la fourniture des services à vous, et/ou (ii) aussi longtemps que nécessaire en ce qui concerne la relation contractuelle avec vous, ensuite seulement si et dans la mesure où nous sommes tenus de le faire en vertu d'obligations légales de conservation. Si nous n'avons plus besoin des données personnelles respectives pour les fins décrites ci-dessus, ces données seront conservées uniquement pendant la période légale de conservation respective et ne seront pas traitées à d'autres fins.
+
+    6. VOS DROITS
+
+    Vous avez le droit de demander à tout moment des informations sur vos données personnelles stockées chez nous. Si les exigences légales sont remplies, vous avez également des droits vis-à-vis de nous pour demander l'accès à et la rectification ou l'effacement ou la restriction du traitement de vos données personnelles ou vous opposer au traitement de vos données personnelles ainsi que le droit de recevoir vos données personnelles que vous nous avez fournies dans un format structuré, couramment utilisé et lisible par machine, afin que vous puissiez transférer ces données à d'autres parties ou les faire transférer ; portabilité des données). Si vous avez donné votre consentement pour l'utilisation des données personnelles, vous pouvez révoquer ce consentement à tout moment (pour l'avenir). Si vous pensez que le traitement de vos données personnelles par nos soins viole les lois sur la protection des données applicables, vous pouvez déposer une plainte auprès de l'autorité de surveillance compétente en matière de protection des données.
+";

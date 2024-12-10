@@ -32,6 +32,8 @@ class AppCoordinator: Coordinator {
     }
         
     func start() {
+        let paywall = self.storageService.remoteRespone?.paywall ?? PaywallLocalize()
+        self.storeService.update(paywall: paywall)
         self.showSplashFlow(completion: { [weak self] mode in
             
             switch mode {
@@ -219,6 +221,8 @@ extension AppCoordinator: FunnelCoordinatorDelegate {
     
     func funnelCoordinatorDidCaptureScreen(coordinator: FunnelCoordinator) {
         self.removeChildCoordinator(coordinator)
+        self.storageService.isOnboardingShowed = true
+        self.storageService.isPrivacyShowed = true
         self.showOrganic()
     }
     
