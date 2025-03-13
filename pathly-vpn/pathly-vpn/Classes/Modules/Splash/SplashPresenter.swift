@@ -13,7 +13,6 @@ protocol SplashPresenterInterface {
     var view: SplashView? { get set }
     var didLoadFinish: ((SplashMode) -> Void)? { get set }
     
-    func showFunnel(type: FunnelFlowType)
     func showOrganic()
     
     func viewDidLoad()
@@ -24,8 +23,6 @@ struct RemoteResponse {
     var appkey1: String?
     var appkey2: String?
     var dismissDelay: Int
-    var scanFlow: FunnelModel?
-    var checkFlow: FunnelModel?
     var productLocalize: [RemoteSubscription]?
     var paywall: PaywallLocalize?
     
@@ -43,7 +40,6 @@ struct RemoteResponse {
 
 enum SplashMode {
     case organic
-    case funnel(flow: FunnelFlowType)
 }
 
 class SplashPresenter {
@@ -83,26 +79,11 @@ class SplashPresenter {
         remoteConfig.fetch(withExpirationDuration: 0) { (status, error) in
             if status == .success {
                 remoteConfig.activate()
-                
-                let key1 = remoteConfig.configValue(forKey: "appkey1").stringValue
-                let key2 = remoteConfig.configValue(forKey: "appkey2").stringValue
+            
                 let dismissDelay = remoteConfig.configValue(forKey: "dismissDelay").numberValue
                 
-                let decoder = JSONDecoder()
-                let languageCode = Locale.current.languageCode ?? "en"
-                
-                let funnelScanFlowDataValue = remoteConfig.configValue(forKey: "scan_flow_\(languageCode)").dataValue
-                let funnelCheckFlowDataValue = remoteConfig.configValue(forKey: "check_flow_\(languageCode)").dataValue
-                
-                let funnelScanFlow: FunnelModel? = try? decoder.decode(FunnelModel.self, from: funnelScanFlowDataValue)
-                let funnelCheckFlow: FunnelModel? = try? decoder.decode(FunnelModel.self, from: funnelCheckFlowDataValue)
-                
                 let remoteResponse = RemoteResponse(
-                    appkey1: key1,
-                    appkey2: key2,
-                    dismissDelay: Int(truncating: dismissDelay),
-                    scanFlow: funnelScanFlow,
-                    checkFlow: funnelCheckFlow
+                    dismissDelay: Int(truncating: dismissDelay)
                 )
 
                 completion?(remoteResponse)
@@ -121,7 +102,7 @@ class SplashPresenter {
             switch result {
             case .success(let servers):
                 self?.storageService.servers = servers
-            case .failure(let error):
+            case .failure(_):
                 break
             }
             self?.group.leave()
@@ -142,13 +123,6 @@ class SplashPresenter {
 }
 
 extension SplashPresenter: SplashPresenterInterface {
-    
-    func showFunnel(type: FunnelFlowType) {
-        let mode = SplashMode.funnel(flow: type)
-        self.load()
-        self.view?.updateUI(mode: mode)
-        self.mode = mode
-    }
     
     func showOrganic() {
         group.enter()

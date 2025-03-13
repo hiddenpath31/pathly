@@ -39,8 +39,6 @@ class AppCoordinator: Coordinator {
             switch mode {
                 case .organic:
                     self?.showOrganic()
-                case .funnel(let flow):
-                    self?.showFunnel(type: flow)
             }
 
         })
@@ -86,41 +84,9 @@ class AppCoordinator: Coordinator {
             self.apiService.application.sendEvent(requestData: requestData)            
         }
         
-        if let params = parameters as? [String: AnyObject] {
-            // получениe данных из params
-            
-            var params = params
-            
-            if let referrer = params["appkey"] as? String {
-                print("Referrer: \(referrer)")
-                
-                let keys = self.storageService.remoteRespone?.keys ?? []
-                if keys.contains(referrer), referrer == "checkFlow", let checkFlow = self.storageService.remoteRespone?.checkFlow, self.storageService.isFunnelShowed == false {
-                    self.isDeeplinkOpened = true
-                    self.storageService.isFunnelShowed = true
-                    self.splashPresenter?.showFunnel(type: .flow1(model: checkFlow))
-                    SkarbSDK.sendTest(name: "checkFlow", group: "")
-                } else if keys.contains(referrer), referrer == "scanFlow", let scanFlow = self.storageService.remoteRespone?.scanFlow, self.storageService.isFunnelShowed == false {
-                    self.isDeeplinkOpened = true
-                    self.storageService.isFunnelShowed = true
-                    SkarbSDK.sendTest(name: "scanFlow", group: "")
-                    self.splashPresenter?.showFunnel(type: .flow2(model: scanFlow))
-                } else {
-                    self.splashPresenter?.showOrganic()
-                    self.isAppActive = true
-                    SkarbSDK.sendTest(name: "organic", group: "")
-                    return
-                }
-                
-            } else {
-                self.splashPresenter?.showOrganic()
-                self.isAppActive = true
-
-                return
-            }
-            
-        }
-        
+        self.splashPresenter?.showOrganic()
+        self.isAppActive = true
+        SkarbSDK.sendTest(name: "organic", group: "")
     }
     
     private func showOnboard() {
@@ -148,25 +114,6 @@ class AppCoordinator: Coordinator {
         self.navigationController.present(components.viewController, animated: true)
     }
     
-    func showFunnel(type: FunnelFlowType) {
-//        let loaderViewController = FunnelLoaderViewController()
-        
-        self.storageService.isOnboardingShowed = true
-        self.storageService.isPrivacyShowed = true
-        
-        let funnelCoordinator = FunnelCoordinator(
-            navigationController: navigationController,
-            flowType: type,
-            storeService: self.storeService,
-            apiService: self.apiService
-        )
-        funnelCoordinator.delegate = self
-        addChildCoordinator(funnelCoordinator)
-        funnelCoordinator.start()
-        
-//        self.navigationController.setViewControllers([loaderViewController], animated: false)
-    }
-    
     private func showTab(autoConnect: Bool) {
         let tabCoordinator = TabCoordinator(
             navigationController: self.navigationController,
@@ -189,12 +136,15 @@ extension AppCoordinator {
     func showSplashFlow(completion: ((SplashMode) -> Void)?) {
         var splashComponents = SplashComponents.make(
             apiService: apiService,
-            storageService: storageService, 
+            storageService: storageService,
             storeService: storeService
         )
         self.splashPresenter = splashComponents.presenter
         splashComponents.presenter.didLoadFinish = completion
-        self.navigationController.setViewControllers([splashComponents.viewController], animated: false)
+        
+        DispatchQueue.main.async {
+            self.navigationController.setViewControllers([splashComponents.viewController], animated: false)
+        }
     }
 
 }
@@ -208,28 +158,6 @@ extension AppCoordinator {
                 coordinator.applicationHandlerEvent(event)
             }
         }
-    }
-
-}
-
-extension AppCoordinator: FunnelCoordinatorDelegate {
-    
-    func funnelCoordinatorDidEnterBackground(coordinator: FunnelCoordinator) {
-        self.removeChildCoordinator(coordinator)
-        self.showOrganic()
-    }
-    
-    func funnelCoordinatorDidCaptureScreen(coordinator: FunnelCoordinator) {
-        self.removeChildCoordinator(coordinator)
-        self.storageService.isOnboardingShowed = true
-        self.storageService.isPrivacyShowed = true
-        self.showOrganic()
-    }
-    
-    func funnelCoordinatorDidEndFlow(coordinator: FunnelCoordinator) {
-        self.storageService.isOnboardingShowed = true
-        self.removeChildCoordinator(coordinator)
-        self.showTab(autoConnect: true)
     }
 
 }

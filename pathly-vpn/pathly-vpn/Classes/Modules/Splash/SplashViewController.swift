@@ -95,8 +95,6 @@ extension SplashViewController: SplashView {
         switch mode {
             case .organic:
                 self.organicSetupUI()
-            case .funnel:
-                self.funnelSetupUI()
         }
     }
     

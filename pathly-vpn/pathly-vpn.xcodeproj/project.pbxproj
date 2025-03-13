@@ -100,16 +100,6 @@
 		11DAD7262CDCF98D0051A2F2 /* TabNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DAD7252CDCF98D0051A2F2 /* TabNavigationController.swift */; };
 		11DAD7292CDCF9AA0051A2F2 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DAD7282CDCF9AA0051A2F2 /* TabItem.swift */; };
 		11F00B0C2CEE66A300C21098 /* BranchSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 11F00B0B2CEE66A300C21098 /* BranchSDK */; };
-		11F00B212CEE688A00C21098 /* FunnelCheckYouPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B102CEE688A00C21098 /* FunnelCheckYouPhoneView.swift */; };
-		11F00B222CEE688A00C21098 /* FunnelFlowCheckPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B132CEE688A00C21098 /* FunnelFlowCheckPhoneViewController.swift */; };
-		11F00B232CEE688A00C21098 /* FunnelFlowScanPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B142CEE688A00C21098 /* FunnelFlowScanPhoneViewController.swift */; };
-		11F00B242CEE688A00C21098 /* FunnelCheckingYourPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B162CEE688A00C21098 /* FunnelCheckingYourPhoneView.swift */; };
-		11F00B252CEE688A00C21098 /* FunnelFlowScanPhoneRiskCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B172CEE688A00C21098 /* FunnelFlowScanPhoneRiskCategoryView.swift */; };
-		11F00B262CEE688A00C21098 /* FunnelFlowScanPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B182CEE688A00C21098 /* FunnelFlowScanPhoneView.swift */; };
-		11F00B272CEE688A00C21098 /* FunnelFlowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B1A2CEE688A00C21098 /* FunnelFlowPresenter.swift */; };
-		11F00B282CEE688A00C21098 /* FunnelFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B1B2CEE688A00C21098 /* FunnelFlowView.swift */; };
-		11F00B292CEE688A00C21098 /* FunnelLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B1D2CEE688A00C21098 /* FunnelLoaderViewController.swift */; };
-		11F00B2A2CEE688A00C21098 /* FunnelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F00B1F2CEE688A00C21098 /* FunnelCoordinator.swift */; };
 		11F00B2C2CEE6BE100C21098 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11F00B2B2CEE6BE100C21098 /* GoogleService-Info.plist */; };
 		11F00B2F2CEE6CAD00C21098 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 11F00B2E2CEE6CAD00C21098 /* JGProgressHUD */; };
 		11F00B322CEE6CE200C21098 /* SkarbSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 11F00B312CEE6CE200C21098 /* SkarbSDK */; };
@@ -238,16 +228,6 @@
 		11DAD7222CDCF9600051A2F2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		11DAD7252CDCF98D0051A2F2 /* TabNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabNavigationController.swift; sourceTree = "<group>"; };
 		11DAD7282CDCF9AA0051A2F2 /* TabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
-		11F00B102CEE688A00C21098 /* FunnelCheckYouPhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelCheckYouPhoneView.swift; sourceTree = "<group>"; };
-		11F00B132CEE688A00C21098 /* FunnelFlowCheckPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowCheckPhoneViewController.swift; sourceTree = "<group>"; };
-		11F00B142CEE688A00C21098 /* FunnelFlowScanPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowScanPhoneViewController.swift; sourceTree = "<group>"; };
-		11F00B162CEE688A00C21098 /* FunnelCheckingYourPhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelCheckingYourPhoneView.swift; sourceTree = "<group>"; };
-		11F00B172CEE688A00C21098 /* FunnelFlowScanPhoneRiskCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowScanPhoneRiskCategoryView.swift; sourceTree = "<group>"; };
-		11F00B182CEE688A00C21098 /* FunnelFlowScanPhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowScanPhoneView.swift; sourceTree = "<group>"; };
-		11F00B1A2CEE688A00C21098 /* FunnelFlowPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowPresenter.swift; sourceTree = "<group>"; };
-		11F00B1B2CEE688A00C21098 /* FunnelFlowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelFlowView.swift; sourceTree = "<group>"; };
-		11F00B1D2CEE688A00C21098 /* FunnelLoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelLoaderViewController.swift; sourceTree = "<group>"; };
-		11F00B1F2CEE688A00C21098 /* FunnelCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnelCoordinator.swift; sourceTree = "<group>"; };
 		11F00B2B2CEE6BE100C21098 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		11F00B392CEE728000C21098 /* Funnel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Funnel.swift; sourceTree = "<group>"; };
 		11F00B3B2CEE75F300C21098 /* AnalyticService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticService.swift; sourceTree = "<group>"; };
@@ -732,27 +712,9 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
-		11F00B112CEE688A00C21098 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				11F00B102CEE688A00C21098 /* FunnelCheckYouPhoneView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		11F00B122CEE688A00C21098 /* CheckDevice */ = {
-			isa = PBXGroup;
-			children = (
-				11F00B112CEE688A00C21098 /* Views */,
-			);
-			path = CheckDevice;
-			sourceTree = "<group>";
-		};
 		11F00B152CEE688A00C21098 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				11F00B132CEE688A00C21098 /* FunnelFlowCheckPhoneViewController.swift */,
-				11F00B142CEE688A00C21098 /* FunnelFlowScanPhoneViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -760,9 +722,6 @@
 		11F00B192CEE688A00C21098 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				11F00B162CEE688A00C21098 /* FunnelCheckingYourPhoneView.swift */,
-				11F00B172CEE688A00C21098 /* FunnelFlowScanPhoneRiskCategoryView.swift */,
-				11F00B182CEE688A00C21098 /* FunnelFlowScanPhoneView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -772,8 +731,6 @@
 			children = (
 				11F00B152CEE688A00C21098 /* Controllers */,
 				11F00B192CEE688A00C21098 /* Views */,
-				11F00B1A2CEE688A00C21098 /* FunnelFlowPresenter.swift */,
-				11F00B1B2CEE688A00C21098 /* FunnelFlowView.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -781,7 +738,6 @@
 		11F00B1E2CEE688A00C21098 /* Loader */ = {
 			isa = PBXGroup;
 			children = (
-				11F00B1D2CEE688A00C21098 /* FunnelLoaderViewController.swift */,
 			);
 			path = Loader;
 			sourceTree = "<group>";
@@ -790,12 +746,10 @@
 			isa = PBXGroup;
 			children = (
 				11F00B4D2CEFE3D300C21098 /* Extensions */,
-				11F00B122CEE688A00C21098 /* CheckDevice */,
 				11F00B1C2CEE688A00C21098 /* Flow */,
 				11F00B1E2CEE688A00C21098 /* Loader */,
 				11F00B392CEE728000C21098 /* Funnel.swift */,
 				11F00B442CEE787500C21098 /* AnalyticValues.swift */,
-				11F00B1F2CEE688A00C21098 /* FunnelCoordinator.swift */,
 				11F00B462CEFCC6900C21098 /* SubscribeEventRequest.swift */,
 			);
 			path = Funnel;
@@ -967,8 +921,6 @@
 				118751442CE0DE1C00B399CC /* MultyPaywallViewController.swift in Sources */,
 				11F00B3A2CEE728000C21098 /* Funnel.swift in Sources */,
 				1177CDD52CDDD80200ED4B83 /* DataComponents.swift in Sources */,
-				11F00B292CEE688A00C21098 /* FunnelLoaderViewController.swift in Sources */,
-				11F00B232CEE688A00C21098 /* FunnelFlowScanPhoneViewController.swift in Sources */,
 				11DAD6B22CDC69520051A2F2 /* ViewController.swift in Sources */,
 				11F00B432CEE781800C21098 /* Extension+UIColor.swift in Sources */,
 				1187515C2CE1B4DA00B399CC /* VPNButtonView.swift in Sources */,
@@ -986,32 +938,24 @@
 				11DAD6F22CDC7F9F0051A2F2 /* Constants.swift in Sources */,
 				1177CDE42CDDF8FD00ED4B83 /* VPNPresenter.swift in Sources */,
 				11F00B4F2CEFE3E700C21098 /* Extension+Skarb.swift in Sources */,
-				11F00B212CEE688A00C21098 /* FunnelCheckYouPhoneView.swift in Sources */,
 				11DAD6EB2CDC738C0051A2F2 /* PageControlView.swift in Sources */,
 				11DAD6AE2CDC69520051A2F2 /* AppDelegate.swift in Sources */,
 				1177CDF02CDE06B200ED4B83 /* LocationCell.swift in Sources */,
 				1177CDE62CDDF90E00ED4B83 /* VPNComponents.swift in Sources */,
 				118751572CE178F300B399CC /* Server.swift in Sources */,
-				11F00B242CEE688A00C21098 /* FunnelCheckingYourPhoneView.swift in Sources */,
 				11DAD71D2CDCF9460051A2F2 /* DataViewController.swift in Sources */,
-				11F00B252CEE688A00C21098 /* FunnelFlowScanPhoneRiskCategoryView.swift in Sources */,
 				114E4CB62CE6E52B00BF8CC7 /* Observer.swift in Sources */,
 				11DAD6E02CDC6F360051A2F2 /* Fonts.swift in Sources */,
 				11DAD6DE2CDC6F360051A2F2 /* Localizable.swift in Sources */,
 				118751462CE0E0CE00B399CC /* CommonPaywallViewController.swift in Sources */,
 				118751402CE0DD8300B399CC /* PaywallPresenter.swift in Sources */,
-				11F00B2A2CEE688A00C21098 /* FunnelCoordinator.swift in Sources */,
 				1177CDED2CDDFC5000ED4B83 /* LocationsComponents.swift in Sources */,
 				1187514E2CE1099700B399CC /* StoreService.swift in Sources */,
-				11F00B262CEE688A00C21098 /* FunnelFlowScanPhoneView.swift in Sources */,
 				11DAD6F92CDCDCD30051A2F2 /* OnboardPresenter.swift in Sources */,
 				1177CDD32CDDD7F600ED4B83 /* DataPresenter.swift in Sources */,
 				1126A89F2CDEC65200C035AB /* Environment.swift in Sources */,
-				11F00B222CEE688A00C21098 /* FunnelFlowCheckPhoneViewController.swift in Sources */,
-				11F00B272CEE688A00C21098 /* FunnelFlowPresenter.swift in Sources */,
 				11DAD6F52CDCDCB10051A2F2 /* OnboardViewController.swift in Sources */,
 				1126A89D2CDEC5B400C035AB /* StatusResponse.swift in Sources */,
-				11F00B282CEE688A00C21098 /* FunnelFlowView.swift in Sources */,
 				1177CDE22CDDF35A00ED4B83 /* CountryView.swift in Sources */,
 				11DAD6E52CDC714A0051A2F2 /* ViewFactory.swift in Sources */,
 				114E4CB42CE6E52B00BF8CC7 /* KeychainItemAccessibility.swift in Sources */,

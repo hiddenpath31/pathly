@@ -71,38 +71,29 @@ class StorageService {
         let remoteConfig = RemoteConfig.remoteConfig()
         remoteConfig.fetch(withExpirationDuration: 0) { (status, error) in
             if status == .success {
-                remoteConfig.activate()
+                remoteConfig.activate { (status, error) in
+                    let decoder = JSONDecoder()
+                    let languageCode = Locale.current.languageCode ?? "en"
+                    
+                    let productValue = remoteConfig.configValue(forKey: "product_subscription_\(languageCode)").dataValue
+                    let multiPaywallObject = remoteConfig.configValue(forKey: "Paywall_\(languageCode)").dataValue
                 
-                let key1 = remoteConfig.configValue(forKey: "appkey1").stringValue
-                let key2 = remoteConfig.configValue(forKey: "appkey2").stringValue
-                let dismissDelay = remoteConfig.configValue(forKey: "dismissDelay").numberValue
+                    let productLocalize: [RemoteSubscription]? = try? decoder.decode([RemoteSubscription].self, from: productValue)
+                    let paywall: PaywallLocalize? = try? decoder.decode(PaywallLocalize.self, from: multiPaywallObject)
+                    
+                    let remoteResponse = RemoteResponse(
+                        dismissDelay: 0,
+                        productLocalize: productLocalize,
+                        paywall: paywall
+                    )
+                    
+                    self.remoteRespone = remoteResponse
+                    self.isRemoteLoaded = true
+                    completion?()
+                    
+                }
                 
-                let decoder = JSONDecoder()
-                let languageCode = Locale.current.languageCode ?? "en"
                 
-                let funnelScanFlowDataValue = remoteConfig.configValue(forKey: "scan_flow_\(languageCode)").dataValue
-                let funnelCheckFlowDataValue = remoteConfig.configValue(forKey: "check_flow_\(languageCode)").dataValue
-                let productValue = remoteConfig.configValue(forKey: "product_subscription_\(languageCode)").dataValue
-                let multiPaywallObject = remoteConfig.configValue(forKey: "Paywall_\(languageCode)").dataValue
-                
-                let funnelScanFlow: FunnelModel? = try? decoder.decode(FunnelModel.self, from: funnelScanFlowDataValue)
-                let funnelCheckFlow: FunnelModel? = try? decoder.decode(FunnelModel.self, from: funnelCheckFlowDataValue)
-                let productLocalize: [RemoteSubscription]? = try? decoder.decode([RemoteSubscription].self, from: productValue)
-                let paywall: PaywallLocalize? = try? decoder.decode(PaywallLocalize.self, from: multiPaywallObject)
-                
-                let remoteResponse = RemoteResponse(
-                    appkey1: key1,
-                    appkey2: key2,
-                    dismissDelay: Int(truncating: dismissDelay),
-                    scanFlow: funnelScanFlow,
-                    checkFlow: funnelCheckFlow,
-                    productLocalize: productLocalize,
-                    paywall: paywall
-                )
-
-                self.remoteRespone = remoteResponse
-                self.isRemoteLoaded = true
-                completion?()
             } else {
                 self.isRemoteLoaded = true
                 completion?()
@@ -113,5 +104,5 @@ class StorageService {
 }
 
 extension StorageService: StorageServiceInterface {
-
+    
 }
